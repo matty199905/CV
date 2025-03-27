@@ -9,7 +9,8 @@ width: 100%;
 margin-top: 250px;
 h2{
     font-size: 28px;
-    color:  rgb(3, 0, 97);
+    color:${(props) => (props.color === 'light' ? 'rgb(3, 0, 97)' : 'rgba(103, 98, 255, 0.77)')}  
+
 }
 `
 
@@ -29,7 +30,7 @@ align-items: center;
 width: 320px;
 height: 100px;
 padding: 10px;
-border: 2px solid rgba(3, 0, 97, 0.17);
+border: 2px solid var(--primary);
 border-radius: 20px;
 div {
     display: flex;

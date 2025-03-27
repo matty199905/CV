@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { motion } from 'framer-motion'
 
 
 export const NavbarContainer = styled.nav`
@@ -11,8 +11,8 @@ align-items: flex-end;
 padding: 20px 30px;
 width: 92%;
 height:90px;
-background-color: #f5f5f5;
-border-bottom: 2px solid rgba(3, 0, 97, 0.17);
+background-color:${(props) => (props.color === 'light' ? '#f5f5f5' : '#131313')};
+border-bottom: 2px solid var(--primary);
 z-index: 200;
 `
 
@@ -45,7 +45,7 @@ align-items: center;
 width: 40px;
 height: 40px;
 margin-bottom: -8px;
-border: 2px solid  rgba(3, 0, 97, 0.17);
+border: 2px solid var(--primary);
 border-radius: 10px;
 font-size: 21px;
 cursor: pointer;
@@ -59,4 +59,9 @@ cursor: pointer;
  }
 
     
+`
+
+
+export const DropDownContainer = styled(motion.div)`
+
 `

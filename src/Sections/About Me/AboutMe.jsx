@@ -15,14 +15,20 @@ import { SiSass } from "react-icons/si";
 import { SiStyledcomponents } from "react-icons/si";
 import Button from '../../UI/Button/Button';
 
+import { useSelector } from 'react-redux'
+
 
 const AboutMe = () => {
+
+  const color = useSelector(state => state.background?.color)
+
+
   return (
-    <AboutMeWrapper>
+    <AboutMeWrapper >
 
 
 
-      <InfoContainer>
+      <InfoContainer color={color}>
         <h1>Hola, soy <br />Matías Bottcher!</h1>
         <h2>FRONT-END DEVELOPER</h2>
         <p>Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías.</p>
@@ -38,44 +44,44 @@ const AboutMe = () => {
 
 
 
-          <SkillsContainer>
+        <SkillsContainer>
 
-            <span>Tech Skills:</span>
-
-
-            <IconSkillContainer title='HTML5'><FaHtml5 className='html' /></IconSkillContainer>
-
-            <IconSkillContainer title='CSS3'><SiCss3 className='css' /></IconSkillContainer>
-
-            <IconSkillContainer title='Javascript'><FaJs className='js' /></IconSkillContainer>
-
-            <IconSkillContainer title='Git'><FaGitSquare className='git' /></IconSkillContainer>
-
-            <IconSkillContainer title='Styled Components'><SiStyledcomponents className='styled-components' /></IconSkillContainer>
-
-            <IconSkillContainer title='React'><FaReact className='react' /></IconSkillContainer>
-
-            <IconSkillContainer title='NPM'><SiNpm className='npm' /></IconSkillContainer>
-
-          </SkillsContainer>
+          <span>Tech Skills:</span>
 
 
+          <IconSkillContainer title='HTML5'><FaHtml5 className='html' /></IconSkillContainer>
 
+          <IconSkillContainer title='CSS3'><SiCss3 className='css' /></IconSkillContainer>
 
-          <SkillsContainer>
+          <IconSkillContainer title='Javascript'><FaJs className='js' /></IconSkillContainer>
 
-            <span>Basic Skills:</span>
+          <IconSkillContainer title='Git'><FaGitSquare className='git' /></IconSkillContainer>
 
-            <IconSkillContainer title='Bootstrap'><FaBootstrap className='bootstrap' /></IconSkillContainer>
+          <IconSkillContainer title='Styled Components'><SiStyledcomponents className='styled-components' /></IconSkillContainer>
 
-            <IconSkillContainer title='Sass'><SiSass className='sass' /></IconSkillContainer>
+          <IconSkillContainer title='React'><FaReact className='react' /></IconSkillContainer>
 
-          </SkillsContainer>
+          <IconSkillContainer title='NPM'><SiNpm className='npm' /></IconSkillContainer>
+
+        </SkillsContainer>
 
 
 
 
-        
+        <SkillsContainer>
+
+          <span>Basic Skills:</span>
+
+          <IconSkillContainer title='Bootstrap'><FaBootstrap className='bootstrap' /></IconSkillContainer>
+
+          <IconSkillContainer title='Sass'><SiSass className='sass' /></IconSkillContainer>
+
+        </SkillsContainer>
+
+
+
+
+
       </InfoContainer>
 
 

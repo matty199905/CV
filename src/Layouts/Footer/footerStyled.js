@@ -11,7 +11,7 @@ gap: 30px;
 width: 100%;
 height: 100px;
 margin-top:130px;
-border-top: 2px solid rgba(3, 0, 97, 0.17);
+border-top: 2px solid var(--primary);
 span {
     font-weight: 500;
 }

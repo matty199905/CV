@@ -8,7 +8,7 @@ border-radius: 10px;
 margin-left: ${(props)=>(props.download ? '20px' : '0px')};
 margin-top: ${(props)=>(!props.download ? '10px' : '0px')};;
 border: none;
-background-color: darkblue;
+background-color: ${(props) => (props.color === 'light' ? 'darkblue' : 'rgba(103, 98, 255, 0.77)')};
 color: white;
 font-size: ${(props)=>(props.download ? '15px' : '14px')} ;
 transition: all 0.2s ease;

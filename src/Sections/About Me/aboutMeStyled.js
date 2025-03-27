@@ -22,7 +22,7 @@ h1{
 h2 {
     font-size:25px;
     font-weight: 800;
-    color: rgba(3, 0, 97, 0.73);
+    color:${(props) => (props.color === 'light' ? ' rgba(3, 0, 97, 0.73)' : 'rgba(135, 131, 251, 0.77)')};
 }
 p{
     margin-top:20px;

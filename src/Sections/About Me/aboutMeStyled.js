@@ -51,7 +51,7 @@ justify-content: center;
 align-items: center;
 font-size: 40px;
 cursor: pointer;
-.linkedin {color: blue}
+.linkedin {color:royalblue}
 .github {color: dark}
 `
 
@@ -89,11 +89,11 @@ filter: drop-shadow(0px 1px 0.5px black);
 
 
 export const ProfilePhoto = styled.div`
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-    background-image: url("https://th.bing.com/th/id/R.67c912afa609f60dda24a383c6564f2a?rik=WfRov0z5UlD1Cw&pid=ImgRaw&r=0");
-    background-position: center;
+    background-image: url('/IMG_20180915_130837_329.jpg') ;
+    background-position: left;
     background-size: cover;
-    transition: clip-path 0.5s ease-in-out;
+
   `

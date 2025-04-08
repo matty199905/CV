@@ -21,13 +21,13 @@ const Navbar = () => {
 
     <NavbarContainer color={color}>
       <NavLogo>
-        Currículum Vitae
+      Portfolio 
       </NavLogo>
 
       <SectionsContainer>
 
         <li onClick={()=>{window.scroll(0, 0)}}>Sobre mí</li>
-        <li onClick={()=>{window.scroll(0, 680)}}>Projectos</li>
+        <li onClick={()=>{window.scroll(0, 680)}}>Proyectos</li>
         <li onClick={()=>{window.scroll(0, 1300)}}>Contacto</li>
 
 

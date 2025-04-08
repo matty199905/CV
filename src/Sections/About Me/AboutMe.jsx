@@ -35,7 +35,7 @@ const AboutMe = () => {
 
         <CvDataContainer>
 
-          <a href="https://www.linkedin.com/in/mati-ab-9641a0263" target='_blank' rel="noopener"><SocialContact><FaLinkedin className='linkedin' /></SocialContact></a>
+          <a href="https://www.linkedin.com/in/matias-bottcher-09b780215/" target='_blank' rel="noopener"><SocialContact><FaLinkedin className='linkedin' /></SocialContact></a>
           <a href="https://github.com/matty199905" target='_blank' rel="noopener"><SocialContact><FaGithub className='github' /></SocialContact></a>
 
           <Button download={"true"} type='file'><a href="archivo.pdf" download>DESCARGAR CV</a></Button>

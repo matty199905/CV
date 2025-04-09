@@ -89,11 +89,12 @@ filter: drop-shadow(0px 1px 0.5px black);
 
 
 export const ProfilePhoto = styled.div`
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-image: url('/IMG_20180915_130837_329.jpg') ;
-    background-position: left;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 
   `

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { AnimatePresence } from 'framer-motion';
 import { DropDownContainer, LightIconContainer, NavbarContainer, NavLogo, SectionsContainer, ToggleIconContainer } from './navbarStyled'
 import { LuSun } from "react-icons/lu";
 import { useDispatch, useSelector } from 'react-redux'
@@ -29,9 +28,29 @@ const Navbar = () => {
 
       <SectionsContainer>
 
-        <li className='sections' onClick={() => { window.scroll(0, 0) }}>Sobre mí</li>
-        <li className='sections' onClick={() => { window.scroll(0, 650) }}>Proyectos</li>
-        <li className='sections' onClick={() => { window.scroll(0, 1300) }}>Contacto</li>
+        <li className='sections' onClick={() => { window.scrollTo(0, 0)
+        }}>Sobre mí</li>
+
+
+
+        <li className='sections' onClick={() => {
+          if (window.innerWidth < 930) {
+            window.scrollTo(0, 970);
+          } else {
+            window.scrollTo(0, 620);
+          } 
+        
+        }}>Proyectos</li>
+
+
+
+        <li className='sections' onClick={() => {
+          if (window.innerWidth < 930) {
+            window.scrollTo(0, 2150);
+          } else {
+            window.scrollTo(0, 1850);
+          } 
+        }}>Contacto</li>
 
 
         <LightIconContainer>
@@ -43,21 +62,21 @@ const Navbar = () => {
 
 
         {/* Contenedor del Dropdown */}
-          <DropDownContainer
-            color={color}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3}}
-            key="dropDown-bgcolor"
-            isOpen={isOpen}>
-            <ul >
-              <li onClick={() => { dispatch(changeBackgroundColor('light')); setIsOpen(!isOpen) }}>Light</li>
-              <li onClick={() => { dispatch(changeBackgroundColor('dark')); setIsOpen(!isOpen) }}>Dark</li>
-            </ul>
-          </DropDownContainer>
+        <DropDownContainer
+          color={color}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3 }}
+          key="dropDown-bgcolor"
+          isOpen={isOpen}>
+          <ul >
+            <li onClick={() => { dispatch(changeBackgroundColor('light')); setIsOpen(!isOpen) }}>Light</li>
+            <li onClick={() => { dispatch(changeBackgroundColor('dark')); setIsOpen(!isOpen) }}>Dark</li>
+          </ul>
+        </DropDownContainer>
 
-    
+
 
 
 

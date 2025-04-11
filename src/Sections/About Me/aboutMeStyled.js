@@ -117,33 +117,20 @@ display: flex;
 justify-content: flex-start;
 gap: 10px;
 width: 100%;
+img {
+    width: 35px;
+}
 @media (max-width: 470px) {
     justify-content: center;
     width: 100%;
+    gap: 15px;
 }
 @media (max-width: 375px) {
     flex-wrap: wrap;
 }
 `
 
-export const IconSkillContainer = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 31px;
-filter: drop-shadow(0px 1px 0.5px black);
 
-
-  .html { color: orangered; }
-  .css { color: lightseagreen; font-size:28px }
-  .js { color: #e2e201; }
-  .git { color: red; font-size:29px}
-  .styled-components { color: #ff00bf; font-size:45px }
-  .react { color: lightseagreen; }
-  .npm { color: red; font-size:29px}
-  .bootstrap { color: purple; }
-  .sass { color: rgb(254, 102, 216); }
-`
 
 
 export const ProfilePhoto = styled.div`

@@ -1,18 +1,9 @@
 import React from 'react'
-import { AboutMeWrapper, CvDataContainer, IconsContainer, IconSkillContainer, InfoContainer, ProfilePhoto, SkillsContainer, SkillsWrapper, SocialContact } from './aboutMeStyled'
+import { AboutMeWrapper, CvDataContainer, IconsContainer, InfoContainer, ProfilePhoto, SkillsContainer, SkillsWrapper, SocialContact } from './aboutMeStyled'
 
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-import { FaHtml5 } from "react-icons/fa";
-import { SiCss3 } from "react-icons/si";
-import { FaJs } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaGitSquare } from "react-icons/fa";
-import { SiNpm } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-import { SiSass } from "react-icons/si";
-import { SiStyledcomponents } from "react-icons/si";
 import Button from '../../UI/Button/Button';
 
 import { useSelector } from 'react-redux'
@@ -35,8 +26,8 @@ const AboutMe = () => {
 
         <CvDataContainer>
 
-          <a href="https://www.linkedin.com/in/matias-bottcher-09b780215/" target='_blank' rel="noopener"><SocialContact><FaLinkedin className='linkedin' /></SocialContact></a>
-          <a href="https://github.com/matty199905" target='_blank' rel="noopener"><SocialContact><FaGithub className='github' /></SocialContact></a>
+          <a href="https://www.linkedin.com/in/matias-bottcher-09b780215/" target='_blank' rel="noreferrer"><SocialContact><FaLinkedin className='linkedin' /></SocialContact></a>
+          <a href="https://github.com/matty199905" target='_blank' rel="noreferrer"><SocialContact><FaGithub className='github' /></SocialContact></a>
 
           <Button download={"true"} type='file'><a href="archivo.pdf" download>DESCARGAR CV</a></Button>
 
@@ -51,19 +42,14 @@ const AboutMe = () => {
 
             <IconsContainer>
           
-              <IconSkillContainer title='HTML5'><FaHtml5 className='html' /></IconSkillContainer>
-
-              <IconSkillContainer title='CSS3'><SiCss3 className='css' /></IconSkillContainer>
-
-              <IconSkillContainer title='Javascript'><FaJs className='js' /></IconSkillContainer>
-
-              <IconSkillContainer title='Git'><FaGitSquare className='git' /></IconSkillContainer>
-
-              <IconSkillContainer title='Styled Components'><SiStyledcomponents className='styled-components' /></IconSkillContainer>
-
-              <IconSkillContainer title='React'><FaReact className='react' /></IconSkillContainer>
-
-              <IconSkillContainer title='NPM'><SiNpm className='npm' /></IconSkillContainer>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="40" />
+           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="40" /> 
+           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" /> 
+           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="40" /> 
+           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="40" /> 
+           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm" width="40" /> 
+           <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Styled Components" width="40" /> 
+  
             </IconsContainer>
 
           </SkillsContainer>
@@ -77,9 +63,9 @@ const AboutMe = () => {
 
             <IconsContainer>
 
-              <IconSkillContainer title='Bootstrap'><FaBootstrap className='bootstrap' /></IconSkillContainer>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="40" /> 
 
-              <IconSkillContainer title='Sass'><SiSass className='sass' /></IconSkillContainer>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" width="40" />
 
             </IconsContainer>
 

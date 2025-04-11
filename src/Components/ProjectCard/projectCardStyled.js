@@ -18,7 +18,7 @@ h3{
 export const ProjectContainer = styled(motion.div)`
 position: relative;
 width: 100%;
-height: 100%;
+height: 80%;
 border-radius: 20px;
 z-index: 100;
 padding: 0;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutMeWrapper, CvDataContainer, IconSkillContainer, InfoContainer, ProfilePhoto, SkillsContainer, SkillsWrapper, SocialContact } from './aboutMeStyled'
+import { AboutMeWrapper, CvDataContainer, IconsContainer, IconSkillContainer, InfoContainer, ProfilePhoto, SkillsContainer, SkillsWrapper, SocialContact } from './aboutMeStyled'
 
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -20,7 +20,7 @@ import { useSelector } from 'react-redux'
 
 const AboutMe = () => {
 
-  const color = useSelector(state => state.background?.color)
+  const color = useSelector(state => state.Background?.color)
 
 
   return (
@@ -43,49 +43,58 @@ const AboutMe = () => {
         </CvDataContainer>
 
 
+        <SkillsWrapper>
 
-        <SkillsContainer>
+          <SkillsContainer>
 
-          <span>Tech Skills:</span>
+            <span>Tech Skills:</span>
 
+            <IconsContainer>
+          
+              <IconSkillContainer title='HTML5'><FaHtml5 className='html' /></IconSkillContainer>
 
-          <IconSkillContainer title='HTML5'><FaHtml5 className='html' /></IconSkillContainer>
+              <IconSkillContainer title='CSS3'><SiCss3 className='css' /></IconSkillContainer>
 
-          <IconSkillContainer title='CSS3'><SiCss3 className='css' /></IconSkillContainer>
+              <IconSkillContainer title='Javascript'><FaJs className='js' /></IconSkillContainer>
 
-          <IconSkillContainer title='Javascript'><FaJs className='js' /></IconSkillContainer>
+              <IconSkillContainer title='Git'><FaGitSquare className='git' /></IconSkillContainer>
 
-          <IconSkillContainer title='Git'><FaGitSquare className='git' /></IconSkillContainer>
+              <IconSkillContainer title='Styled Components'><SiStyledcomponents className='styled-components' /></IconSkillContainer>
 
-          <IconSkillContainer title='Styled Components'><SiStyledcomponents className='styled-components' /></IconSkillContainer>
+              <IconSkillContainer title='React'><FaReact className='react' /></IconSkillContainer>
 
-          <IconSkillContainer title='React'><FaReact className='react' /></IconSkillContainer>
+              <IconSkillContainer title='NPM'><SiNpm className='npm' /></IconSkillContainer>
+            </IconsContainer>
 
-          <IconSkillContainer title='NPM'><SiNpm className='npm' /></IconSkillContainer>
-
-        </SkillsContainer>
-
-
-
-
-        <SkillsContainer>
-
-          <span>Basic Skills:</span>
-
-          <IconSkillContainer title='Bootstrap'><FaBootstrap className='bootstrap' /></IconSkillContainer>
-
-          <IconSkillContainer title='Sass'><SiSass className='sass' /></IconSkillContainer>
-
-        </SkillsContainer>
+          </SkillsContainer>
 
 
+
+
+          <SkillsContainer>
+
+            <span>Basic Skills:</span>
+
+            <IconsContainer>
+
+              <IconSkillContainer title='Bootstrap'><FaBootstrap className='bootstrap' /></IconSkillContainer>
+
+              <IconSkillContainer title='Sass'><SiSass className='sass' /></IconSkillContainer>
+
+            </IconsContainer>
+
+          </SkillsContainer>
+
+        </SkillsWrapper>
 
 
 
       </InfoContainer>
 
 
-      <ProfilePhoto />
+      <ProfilePhoto>
+        <img src="/IMG_20180915_130837_329.jpg" alt="foto" />
+      </ProfilePhoto>
 
     </AboutMeWrapper>
   )

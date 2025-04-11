@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { InfoContainer, ProjectContainer, ProjectWrapper } from './projectCardStyled'
 import Button from '../../UI/Button/Button';
-import FlippedCard from './FlippedCard';
+import FlippedCard from '../FlippedCard/FlippedCard';
 
 
 
 
-const Project = ({ children, title, redirect, description, tools, projectCode }) => {
+const ProjectCard = ({ children, title, redirect, description, tools, projectCode }) => {
 
   const [flipped, setFlipped] = useState(false);
 
@@ -22,7 +22,7 @@ const Project = ({ children, title, redirect, description, tools, projectCode })
         flipped={flipped}
         onClick={(e) => {
           if (flipped) {
-            e.stopPropagation(); // Evita que se propague el evento
+            e.stopPropagation();
             return;
           }
           if (redirect) {
@@ -37,17 +37,19 @@ const Project = ({ children, title, redirect, description, tools, projectCode })
         tools={tools} 
         projectCode={projectCode}/>}
 
-      </ProjectContainer>
 
+
+
+      </ProjectContainer>
 
       <InfoContainer>
 
-        <h3>{title}</h3>
-        <Button onClick={() => {setFlipped(!flipped)}}>
-          {!flipped ? 'Ver Más' : 'Volver'}
-        </Button>
+<h3>{title}</h3>
+<Button onClick={() => {setFlipped(!flipped)}}>
+  {!flipped ? 'Ver Más' : 'Volver'}
+</Button>
 
-      </InfoContainer>
+</InfoContainer>
 
 
 
@@ -57,4 +59,4 @@ const Project = ({ children, title, redirect, description, tools, projectCode })
   )
 }
 
-export default Project
+export default ProjectCard

@@ -10,7 +10,7 @@ const FlippedCard = ({ description, tools, projectCode }) => {
 
                 <span>Herramientas Utilizadas: <p className='tools'>{tools}</p></span>
                 <span>GitHub:    
-                     <a href={projectCode} target="_blank" rel="noopener noreferrer"> {projectCode}</a>
+                     <a href={projectCode} target="_blank" rel="noopener noreferrer">{projectCode}</a>
                 </span>
             </AboutProject>
 

@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 const Button = ({ children, download, onClick }) => {
 
     
-  const color = useSelector(state => state.background?.color)
+  const color = useSelector(state => state.Background?.color)
 
 
     return (

@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-export const ContactWrapper = styled.div`
+export const ContactWrapper = styled.section`
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 100%;
-margin-top: 250px;
+margin-top: 150px;
 h2{
     font-size: 28px;
     color:${(props) => (props.color === 'light' ? 'rgb(3, 0, 97)' : 'rgba(103, 98, 255, 0.77)')}  
@@ -14,8 +14,9 @@ h2{
 }
 `
 
-export const ContactContainer=styled.div`
+export const ContactContainer = styled.div`
 display:flex;
+flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 gap: 40px;
@@ -54,5 +55,8 @@ a{
     &:hover{
         color: blue;
     }
+}
+@media (max-width: 375px) {
+width: 290px;
 }
 `

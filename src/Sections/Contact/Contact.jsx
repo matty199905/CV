@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 const Contact = () => {
 
 
-    const color = useSelector(state => state.background?.color)
+    const color = useSelector(state => state.Background?.color)
 
     return (
         <ContactWrapper color={color}>

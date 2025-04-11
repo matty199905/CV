@@ -6,9 +6,9 @@ import { GlobalStyles } from './globalStyles';
 
 const GlobalStylesComponent = () => {
 
-  const color  = useSelector(state => state.background?.color)
+  const {color}  = useSelector(state => state.Background)
 
-  return <GlobalStyles color={color} />;
+  return <GlobalStyles bgcolor={color} />;
 }
 
 export default GlobalStylesComponent

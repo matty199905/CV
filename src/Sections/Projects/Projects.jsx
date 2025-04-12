@@ -22,7 +22,7 @@ const Projects = () => {
                     redirect={"https://bottchers-henna.vercel.app/"}
                     title={"Bottchers"}>
 
-                    <div style={{ width: '100%', height: '350px', overflow: 'hidden', borderRadius: '20px' }}>
+                    <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
                         <iframe
                             src="https://bottchers-henna.vercel.app/"
                             title="Bottchers"
@@ -52,7 +52,7 @@ const Projects = () => {
                     redirect={"https://maxflix-jet.vercel.app/"}
                     title={"MaxFlix"}
                 >
-                  <div style={{ width: '100%', height: '350px', overflow: 'hidden', borderRadius: '20px' }}>
+                  <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
                     <iframe
                         src="https://maxflix-jet.vercel.app/"
                         title="MaxFlix"

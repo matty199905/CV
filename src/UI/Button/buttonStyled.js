@@ -5,9 +5,9 @@ export const ButtonContainer = styled.button`
 display: flex;
 justify-content: center;
 align-items: center;
-width: ${(props)=>(props.download ? '210px' : '80px')};
-height: ${(props)=>(props.download ? '45px' : '35px')};;
-border-radius: 10px;
+width: ${(props)=>(props.download ? '180px' : '80px')};
+height: ${(props)=>(props.download ? '40px' : '35px')};;
+border-radius: 15px;
 margin-left: ${(props)=>(props.download ? '20px' : '0px')};
 margin-top: ${(props)=>(!props.download ? '10px' : '0px')};
 border: none;
@@ -18,16 +18,17 @@ font-size: ${(props)=>(props.download ? '15px' : '14px')} ;
 transition: all 0.2s ease;
 &:hover{
 background-color: orange;
-color:black;
+color:white;
 transition: all 0.2s ease;
+font-size: 15.5px;
+font-weight: 700;
 }
 @media (max-width:930px) {
 scale: ${(props)=>(props.download ? '0.9': 'none')};
 margin-left: ${(props)=>(props.download ? '0px' : '0px')};
 }
 @media (max-width:530px) {
-font-size: ${(props)=>(props.download ? '13px' : 'null')};
-min-width: ${(props)=>(props.download ? '150px': 'none')};
-scale: ${(props)=>(!props.download ? '0.9' : 'null')};
-}
+font-size: ${(props)=>(props.download ? '13px' : undefined)};
+max-width: ${(props)=>(props.download ? '150px': undefined)};
+transform: ${(props)=>(!props.download ? 'scale(0.9)' : undefined)};}
 `

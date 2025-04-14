@@ -1,14 +1,17 @@
 import React from 'react'
 import { ProjectsContainer, ProjectsWrapper } from './projectsStyled'
 import ProjectCard from '../../Components/ProjectCard/ProjectCard'
+import { useSelector } from 'react-redux'
 
 
 
 
 const Projects = () => {
 
+    const {color} = useSelector(state => state.Background)
+
     return (
-        <ProjectsWrapper>
+        <ProjectsWrapper color={color}>
 
             <h2>PROYECTOS PERSONALES</h2>
 

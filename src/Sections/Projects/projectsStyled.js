@@ -10,6 +10,7 @@ width: 100%;
 height: auto;
 
 h2 {
+    color:${(props) => (props.color === "light" ? "rgb(3, 0, 97)" : "rgba(103, 98, 255, 0.77)")};
 font-size: 33px;
 @media (max-width: 595px) {
 text-align: center;

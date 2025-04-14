@@ -29,7 +29,7 @@ const AboutMe = () => {
           <a href="https://www.linkedin.com/in/matias-bottcher-09b780215/" target='_blank' rel="noreferrer"><SocialContact><FaLinkedin className='linkedin' /></SocialContact></a>
           <a href="https://github.com/matty199905" target='_blank' rel="noreferrer"><SocialContact><FaGithub className='github' /></SocialContact></a>
 
-          <Button download={"true"} type='file'><a href="archivo.pdf" download>DESCARGAR CV</a></Button>
+          <a href="Archives/CV-ProgramadorFrontend.pdf" download><Button download={"true"} type='file'>DESCARGAR CV</Button></a>
 
         </CvDataContainer>
 

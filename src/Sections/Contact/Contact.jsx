@@ -22,7 +22,7 @@ const Contact = () => {
                     <h3>Email</h3>
                     <div>
                        <div className='icon-container'><TfiEmail /></div> 
-                        <a href='mailto:matty199905@hotmail.com' rel="noopener" target='_blank'>matty199905@hotmail.com</a></div>
+                        <a href='mailto:matty199905@hotmail.com' rel="noreferrer" target='_blank'>matty199905@hotmail.com</a></div>
 
 
                 </InfoContainer>
@@ -31,7 +31,7 @@ const Contact = () => {
                     <h3>Whatsapp</h3>
                     <div>
                         <div className='icon-container'><FaWhatsapp /></div>
-                        <a href='https://wa.me/5491132046562' rel="noopener" target='_blank'>+54 9 11 3204-6562</a></div>
+                        <a href='https://wa.me/5491132046562' rel="noreferrer" target='_blank'>+54 9 11 3204-6562</a></div>
 
                 </InfoContainer>
 

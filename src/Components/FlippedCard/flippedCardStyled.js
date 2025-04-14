@@ -29,7 +29,7 @@ border-radius: 20px;
 padding: 30px;
 font-size: 14px;
 color: white;
-background-color: rgba(3, 0, 97, 1);
+background:linear-gradient(to bottom, rgba(2, 0, 59, 0.7),rgba(130, 126, 248, 0.7)) ;
 
 p{
 

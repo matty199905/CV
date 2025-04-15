@@ -53,9 +53,9 @@ const Navbar = () => {
         }}>Contacto</li>
 
 
-        <LightIconContainer>
+        <LightIconContainer onClick={() => setIsOpen(!isOpen)}>
 
-          <LuSun className='icon' onClick={() => setIsOpen(!isOpen)} />
+          <LuSun className='icon' />
 
         </LightIconContainer>
 

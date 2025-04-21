@@ -21,7 +21,8 @@ h3{
 export const AboutProject = styled.div`
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: center;
+align-items: flex-start;
 gap: 20px;
 width: 100%;
 height: 84%;
@@ -35,7 +36,6 @@ p{
 
 line-height: 21px;
 font-weight: 200;
-
 }
 
 .tools{

@@ -20,7 +20,7 @@ const Projects = () => {
 
                 <ProjectCard
                     description={`E-commerce elaborado con ReactJs y Styled-Components. Permite registro de usuario e inicio de sesión. Posee checkout y lógica de órdenes con ruta privada, medio de contacto con respuesta automática, todo lo anterior mencionado mediante el uso de APIS Rest.`}
-                    tools={'Styled Components - React Redux - Axios - Formik - Yup - Framer Motion - React Icons - EmailJs'}
+                    tools={'Styled Components - React Router - React Redux - JWT - Axios - Formik - Yup - Framer Motion - React Icons - EmailJs'}
                     projectCode={'https://github.com/matty199905/Bottchers'}
                     redirect={"https://bottchers-henna.vercel.app/"}
                     title={"Bottchers"}>
@@ -50,7 +50,7 @@ const Projects = () => {
 
                 <ProjectCard
                     description={`Plataforma de Streaming de series y películas. Realizada con ReactJs y Bootstrap, basada en la API TMDB. Posee barra de búsqueda, filtros por géneros según la sección, paginas dinámicas con sus respectivos trailers y redireccionamiento a plataformas Streaming para ver el contenido.`}
-                    tools={'Bootstrap - React Redux - Axios - Framer Motion - React Icons - React Youtube'}
+                    tools={'Bootstrap - React Router - React Redux - Axios - Framer Motion - React Icons - React Youtube'}
                     projectCode={'https://github.com/matty199905/maxflix'}
                     redirect={"https://maxflix-jet.vercel.app/"}
                     title={"MaxFlix"}

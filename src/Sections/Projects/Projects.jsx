@@ -20,14 +20,14 @@ const Projects = () => {
 
                 <ProjectCard
                     description={`E-commerce elaborado con ReactJs y Styled-Components. Permite registro de usuario e inicio de sesión. Posee checkout y lógica de órdenes con ruta privada, medio de contacto con respuesta automática, todo lo anterior mencionado mediante el uso de APIS Rest.`}
-                    tools={'Styled Components - React Router - React Redux - JWT - Axios - Formik - Yup - Framer Motion - React Icons - EmailJs'}
-                    projectCode={'https://github.com/matty199905/Bottchers'}
-                    redirect={"https://bottchers-henna.vercel.app/"}
+                    tools={'TSX - Styled Components - React Router - React Redux - JWT - Axios - Formik - Yup - Framer Motion - React Icons - EmailJs'}
+                    projectCode={'https://github.com/matty199905/Bottchers.git'}
+                    redirect={"https://bottcherstore.vercel.app/"}
                     title={"Bottchers"}>
 
                     <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
                         <iframe
-                            src="https://bottchers-henna.vercel.app/"
+                            src="https://bottcherstore.vercel.app/"
                             title="Bottchers"
                             width="100%"
                             height="100%"
@@ -50,7 +50,7 @@ const Projects = () => {
 
                 <ProjectCard
                     description={`Plataforma de Streaming de series y películas. Realizada con ReactJs y Bootstrap, basada en la API TMDB. Posee barra de búsqueda, filtros por géneros según la sección, paginas dinámicas con sus respectivos trailers y redireccionamiento a plataformas Streaming para ver el contenido.`}
-                    tools={'Bootstrap - React Router - React Redux - Axios - Framer Motion - React Icons - React Youtube'}
+                    tools={'JSX - Bootstrap - React Router - React Redux - Axios - Framer Motion - React Icons - React Youtube'}
                     projectCode={'https://github.com/matty199905/maxflix'}
                     redirect={"https://maxflix-jet.vercel.app/"}
                     title={"MaxFlix"}

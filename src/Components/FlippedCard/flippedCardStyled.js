@@ -21,15 +21,16 @@ h3{
 }
 `
 
+
 export const AboutProject = styled.div`
 display: flex;
 flex-direction: column;
-justify-content: center;
-align-items:center;
-width: 100%;
-height: 100%;
-border-radius: 20px;
 padding: 30px;
+justify-content: flex-start;
+align-items: center;
+width: 100%;
+height: auto;
+border-radius: 20px;
 font-size: 14px;
 font-weight: 300;
 text-align: center;
@@ -38,10 +39,7 @@ background:linear-gradient(to bottom, rgba(2, 0, 59, 0.7),rgba(130, 126, 248, 0.
 overflow-y: auto;
 
 
-
-
 p{
-    margin-top: 80px;
     margin-bottom: 30px;
 }
 
@@ -83,8 +81,7 @@ span{
         justify-content: center;
         align-items: flex-start;
         margin-top: 30px;
-        gap: 2px;
-        
+        gap: 5px;
 
 span{
     font-weight: 500;
@@ -98,13 +95,10 @@ a{
     word-break: break-all;
     overflow-wrap: break-word;
     display: flex;
-    
     }
     
-
+} 
      @media (max-width: 580px) {
-    overflow-y: scroll;
-    overflow-x: hidden;
     padding: 30px 60px
 }
 
@@ -112,7 +106,6 @@ a{
     padding: 30px 30px;
     gap: 20px;
 }
-} 
 `
 
 

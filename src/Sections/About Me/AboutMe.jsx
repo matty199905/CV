@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import { AboutMeWrapper, CvDataContainer, IconsContainer, InfoContainer, ProfilePhoto, SkillsContainer, SkillsWrapper, SocialContact } from './aboutMeStyled'
 
 import { FaLinkedin } from "react-icons/fa";

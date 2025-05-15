@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import { ButtonContainer } from './buttonStyled'
 import { useSelector } from 'react-redux'
 

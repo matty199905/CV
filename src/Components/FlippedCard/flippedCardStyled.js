@@ -12,6 +12,9 @@ height: 400px;
 border-radius: 20px;
 background-color: rgba(3, 0, 97, 0.7);
 transform: rotateY(180deg);
+    ::-webkit-scrollbar {
+  width: 8px;      
+}
 h3{
     margin: 10px 0 ;
     color: white;
@@ -22,49 +25,96 @@ export const AboutProject = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: flex-start;
-gap: 20px;
+align-items:center;
 width: 100%;
-height: 84%;
+height: 100%;
 border-radius: 20px;
 padding: 30px;
 font-size: 14px;
+font-weight: 300;
+text-align: center;
 color: white;
 background:linear-gradient(to bottom, rgba(2, 0, 59, 0.7),rgba(130, 126, 248, 0.7)) ;
+overflow-y: auto;
+
+
+
 
 p{
-
-line-height: 21px;
-font-weight: 200;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
-.tools{
-        margin-top: 8px;
+
+div.tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+span{
+    margin-bottom: 10px;
     }
+
+    ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 7px;
+
+    }
+
+    li {
+    
+    line-height: 21px;
+    font-weight: 200;
+    margin-bottom: 2px;
+    background-color: rgba(2, 0, 51, 0.46);
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: default;
+
+    } }
+
+
+    div.github {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 30px;
+        gap: 2px;
+        
 
 span{
     font-weight: 500;
 
-    a{
-                font-weight: 500;
-                color: orange;
-                max-width: 100%;
-                word-break: break-all;
-  overflow-wrap: break-word;
-  display: flex;
-    
-    }
 }
 
+a{
+    font-weight: 500;
+    color: orange;
+    max-width: 100%;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    display: flex;
+    
+    }
+    
 
-@media (max-width: 580px) {
+     @media (max-width: 580px) {
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 30px 60px
 }
 
-@media (max-width: 500px) {
-padding: 30px 30px;
-gap: 20px;
+    @media (max-width: 500px) {
+    padding: 30px 30px;
+    gap: 20px;
 }
+} 
 `
+
+
+
+

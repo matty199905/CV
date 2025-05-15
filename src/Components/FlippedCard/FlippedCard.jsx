@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import { AboutProject, FlippedCardContainer } from './flippedCardStyled'
 
 const FlippedCard = ({ description, tools, projectCode }) => {
@@ -8,10 +8,18 @@ const FlippedCard = ({ description, tools, projectCode }) => {
             <AboutProject>
                 <p>{description}</p>
 
-                <span>Herramientas Utilizadas: <p className='tools'>{tools}</p></span>
-                <span>GitHub:    
-                     <a href={projectCode} target="_blank" rel="noopener noreferrer">{projectCode}</a>
-                </span>
+                <div className='tools'>
+                    <span>Herramientas Utilizadas:  </span>
+                    <ul>
+                        {tools}
+                    </ul>
+
+                </div>
+
+                <div className='github'>
+                    <span>GitHub:</span>
+                    <a href={projectCode} target="_blank" rel="noopener noreferrer">{projectCode}</a>
+                </div>
             </AboutProject>
 
         </FlippedCardContainer>

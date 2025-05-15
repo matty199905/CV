@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import { ContactContainer, ContactWrapper, InfoContainer } from './contactStyled'
 
 import { IoLocationOutline } from "react-icons/io5";

@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import { LayoutWrapper } from './layoutStyled'
 
 const Layout = ({ children }) => {

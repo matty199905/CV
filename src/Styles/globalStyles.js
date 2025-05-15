@@ -12,6 +12,26 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    ::-webkit-scrollbar {
+  width: 12px;      
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  cursor: grab;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #555;
+  cursor: grabbing;
+}
    
   }
 html {

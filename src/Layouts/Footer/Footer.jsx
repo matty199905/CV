@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import { FooterContainer } from './footerStyled'
 import { SocialContact } from '../../Sections/About Me/aboutMeStyled'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'

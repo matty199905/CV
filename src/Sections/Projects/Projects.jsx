@@ -11,6 +11,7 @@ const Projects = () => {
 
 
     const eCommerceTools = [
+        'Vite',
         'TSX',
         'Styled Components',
         'React Router',
@@ -26,6 +27,7 @@ const Projects = () => {
 
 
     const maxFlixTools = [
+        'Create React App',
         'JSX',
         'Bootstrap',
         'React Router',

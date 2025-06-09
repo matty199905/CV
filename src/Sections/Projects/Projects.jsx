@@ -12,7 +12,7 @@ const Projects = () => {
 
     const eCommerceTools = [
         'Vite',
-        'TSX',
+        'Typescript',
         'Styled Components',
         'React Router',
         'React Redux',
@@ -28,7 +28,6 @@ const Projects = () => {
 
     const maxFlixTools = [
         'Create React App',
-        'JSX',
         'Bootstrap',
         'React Router',
         'React Redux',
@@ -39,7 +38,16 @@ const Projects = () => {
     ].map((item) => { return <li>{item}</li> })
 
 
-
+    const theBooktailTools = [
+        'Vite',
+        'Typescript',
+        'Styled Components',
+        'React Router',
+        'React Redux',
+        'React Icons',
+        'Framer Motion',
+    
+    ].map((item) => { return <li>{item}</li> })
 
 
     return (
@@ -106,6 +114,36 @@ const Projects = () => {
 
                         </iframe>
                     </div>
+                </ProjectCard>
+
+
+
+                 <ProjectCard
+                    description={`Página de Cocktails con base de datos propia, donde puedes buscar las recetas de todos tus tragos preferidos por tipo de alcohol, de sabor, por letra, y si ya sabes el nombre del cocktail, por barra de búsqueda. `}
+                    tools={theBooktailTools}
+                    projectCode={'https://github.com/matty199905/The-Booktail.git'}
+                    redirect={"https://the-booktail.vercel.app/"}
+                    title={"Bottchers"}>
+
+                    <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
+                        <iframe
+                            src="https://the-booktail.vercel.app/"
+                            title="The Booktail"
+                            width="100%"
+                            height="100%"
+                            style={{
+                                borderRadius: "20px",
+                                border: "none",
+                                transform: "scale(0.4)",
+                                transformOrigin: "0 0",
+                                width: "250%",
+                                height: "250%",
+                                pointerEvents: "none",
+
+                            }}
+                        ></iframe>
+                    </div>
+
                 </ProjectCard>
 
             </ProjectsContainer>

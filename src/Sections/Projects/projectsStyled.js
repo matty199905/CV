@@ -27,8 +27,6 @@ align-items: center;
 gap: 40px;
 width: 100%;
 height: auto;
-@media (max-width: 768px) {
-gap:0px;
-}
+
 `
 

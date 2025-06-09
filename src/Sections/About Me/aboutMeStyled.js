@@ -87,11 +87,12 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-@media (max-width: 550px) {
+@media (max-width: 620px) {
 margin-top: 20px;
+gap: 20px;
 }
 @media (max-width: 470px) {
-gap: 30px;
+gap: 65px;
 }
 @media (max-width: 371px) {
 gap: 65px;
@@ -101,15 +102,17 @@ gap: 65px;
 
 export const SkillsContainer = styled(CvDataContainer)`
 width: 100%;
+
 span{
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0px;
 }
-@media (max-width: 470px) {
+@media (max-width: 620px) {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+
 }
 `
 export const IconsContainer = styled.div`
@@ -117,16 +120,21 @@ display: flex;
 justify-content: flex-start;
 gap: 10px;
 width: 100%;
+margin: 0 10px;
 img {
     width: 35px;
 }
+@media (max-width: 620px) {
+    justify-content: center;
+
+}
 @media (max-width: 470px) {
     justify-content: center;
-    width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    width: 80vw;
     gap: 15px;
-}
-@media (max-width: 375px) {
-    flex-wrap: wrap;
+        margin: 0 50px;
 }
 `
 

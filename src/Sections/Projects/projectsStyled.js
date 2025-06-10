@@ -24,9 +24,8 @@ display: flex;
 flex-flow: row wrap;
 justify-content: center;
 align-items: center;
-gap: 40px;
+gap: 25px;
 width: 100%;
 height: auto;
-
 `
 

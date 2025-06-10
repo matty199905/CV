@@ -55,6 +55,8 @@ text-align: center;
 }
 `
 
+
+
 export const CvDataContainer = styled.div`
 display: flex;
 justify-content: flex-start;
@@ -63,10 +65,13 @@ padding-right: 7px;
 gap: 15px;
 width: 80%;
 height: 60px;
-margin-top: 20px;
+margin-top: 30px;
 border-radius: 10px;
 @media (max-width: 930px) {
 justify-content: center;
+}
+@media (max-width: 620px) {
+margin-bottom: -10px;
 }
 `
 
@@ -81,6 +86,9 @@ cursor: pointer;
 .linkedin {color:royalblue}
 .github {color: dark}
 `
+
+
+
 
 export const SkillsWrapper = styled.div`
 display:flex;
@@ -100,6 +108,8 @@ gap: 65px;
 `
 
 
+
+
 export const SkillsContainer = styled(CvDataContainer)`
 width: 100%;
 
@@ -112,7 +122,6 @@ span{
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-
 }
 `
 export const IconsContainer = styled.div`
@@ -130,11 +139,11 @@ img {
 }
 @media (max-width: 470px) {
     justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
     width: 80vw;
     gap: 15px;
-        margin: 0 50px;
+    margin: 0 30px;
 }
 `
 

@@ -123,7 +123,7 @@ const Projects = () => {
                     tools={theBooktailTools}
                     projectCode={'https://github.com/matty199905/The-Booktail.git'}
                     redirect={"https://the-booktail.vercel.app/"}
-                    title={"Bottchers"}>
+                    title={"The Booktail"}>
 
                     <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
                         <iframe

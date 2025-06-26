@@ -7,6 +7,7 @@ justify-content: space-around;
 align-items: center;
 width: 100%;
 height: auto;
+margin-top: 110px;
 padding-top: 30px;
 @media (min-width: 930px) {
     margin-top: 80px;

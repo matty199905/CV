@@ -7,7 +7,7 @@ justify-content: space-around;
 align-items: center;
 width: 100%;
 height: auto;
-margin-top: 110px;
+padding-top: 30px;
 @media (min-width: 930px) {
     margin-top: 80px;
 }
@@ -102,9 +102,6 @@ gap: 20px;
 @media (max-width: 470px) {
 gap: 65px;
 }
-@media (max-width: 371px) {
-gap: 65px;
-}
 `
 
 
@@ -156,8 +153,7 @@ justify-content: center;
 align-items: center;
 align-self: flex-end;
 margin-top: 30px;
-    width: 30%;
-    height: 100%;
+    width: 27%;
     img{
 width: 100%;
 border-radius: 50px;

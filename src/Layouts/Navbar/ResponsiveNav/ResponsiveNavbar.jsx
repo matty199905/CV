@@ -28,9 +28,9 @@ const ResponsiveNavbar = () => {
                 <ul>
                     <li onClick={() => { window.scroll(0, 0); dispatch(changeToggleState()) }}>Sobre mí</li>
                     <div bgcolor={color}/>
-                    <li onClick={() => { window.scroll(0, 1050); dispatch(changeToggleState()) }}>Proyectos</li>
+                    <li onClick={() => { window.scroll(0, 1130); dispatch(changeToggleState()) }}>Proyectos</li>
                     <div bgcolor={color}/>
-                    <li onClick={() => { window.scroll(0, 2270); dispatch(changeToggleState()) }}>Contacto</li>
+                    <li onClick={() => { window.scroll(0, 2850); dispatch(changeToggleState()) }}>Contacto</li>
                 </ul>
             </ResponsiveNavContainer>}
 

@@ -30,12 +30,12 @@ const ProjectCard = ({ children, title, redirect, description, tools, projectCod
           }
         }}
       >
-        { !flipped ? children : 
+        {!flipped ? children :
 
-        <FlippedCard 
-        description={description}
-        tools={tools} 
-        projectCode={projectCode}/>}
+          <FlippedCard
+            description={description}
+            tools={tools}
+            projectCode={projectCode} />}
 
 
 
@@ -44,12 +44,12 @@ const ProjectCard = ({ children, title, redirect, description, tools, projectCod
 
       <InfoContainer>
 
-<h3>{title}</h3>
-<Button onClick={() => {setFlipped(!flipped)}}>
-  {!flipped ? 'Ver Más' : 'Volver'}
-</Button>
+        <h3>{title}</h3>
+        <Button onClick={() => { setFlipped(!flipped) }}>
+          {!flipped ? 'Ver Más' : 'Volver'}
+        </Button>
 
-</InfoContainer>
+      </InfoContainer>
 
 
 

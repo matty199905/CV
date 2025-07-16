@@ -80,6 +80,7 @@ Incluye registro de usuario e inicio de sesión, sistema de checkout y lógica d
                                 width: "250%",
                                 height: "250%",
                                 pointerEvents: "none",
+                                overflow: "hidden",
 
                             }}
                         ></iframe>
@@ -111,6 +112,7 @@ Incluye barra de búsqueda, filtros por género según la sección, y páginas d
                                 width: "250%",
                                 height: "250%",
                                 pointerEvents: "none",
+                                overflow: "hidden",
                             }}
                         >
 
@@ -142,6 +144,7 @@ Incluye filtros avanzados por búsqueda, letra inicial, perfiles de sabor y tipo
                                 width: "250%",
                                 height: "250%",
                                 pointerEvents: "none",
+                                overflowY: 'hidden',
 
                             }}
                         ></iframe>

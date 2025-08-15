@@ -11,7 +11,7 @@ const Projects = () => {
 
 
     const eCommerceTools = [
-        'Vite',
+        'Next JS',
         'Typescript',
         'Styled Components',
         'React Router',
@@ -62,13 +62,13 @@ const Projects = () => {
                     description={`E-commerce desarrollado con Vite, React.js y Styled-Components.
 Incluye registro de usuario e inicio de sesión, sistema de checkout y lógica de órdenes con rutas privadas. Cuenta con un medio de contacto con respuesta automática. Todas las funcionalidades se integran mediante el uso de APIs REST.`}
                     tools={eCommerceTools}
-                    projectCode={'https://github.com/matty199905/Bottchers.git'}
-                    redirect={"https://bottcherstore.vercel.app/"}
+                    projectCode={'https://github.com/matty199905/eCommerce-NextJs.git'}
+                    redirect={"https://bottcherstore-ten.vercel.app/"}
                     title={"Bottchers"}>
 
                     <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
                         <iframe
-                            src="https://bottcherstore.vercel.app/"
+                            src="https://bottcherstore-ten.vercel.app/"
                             title="Bottchers"
                             width="100%"
                             height="100%"

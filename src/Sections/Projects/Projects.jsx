@@ -59,7 +59,7 @@ const Projects = () => {
             <ProjectsContainer>
 
                 <ProjectCard
-                    description={`E-commerce desarrollado con Vite, React.js y Styled-Components.
+                    description={`E-commerce desarrollado con Next.js y Styled-Components.
 Incluye registro de usuario e inicio de sesión, sistema de checkout y lógica de órdenes con rutas privadas. Cuenta con un medio de contacto con respuesta automática. Todas las funcionalidades se integran mediante el uso de APIs REST.`}
                     tools={eCommerceTools}
                     projectCode={'https://github.com/matty199905/eCommerce-NextJs.git'}

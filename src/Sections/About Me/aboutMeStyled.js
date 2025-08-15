@@ -8,7 +8,7 @@ align-items: center;
 width: 100%;
 height: auto;
 margin-top: 110px;
-padding-top: 30px;
+padding-top: 15px;
 @media (min-width: 930px) {
     margin-top: 80px;
 }
@@ -96,12 +96,10 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+padding: 0;
 @media (max-width: 620px) {
-margin-top: 20px;
+margin-top: 40px;
 gap: 20px;
-}
-@media (max-width: 470px) {
-gap: 65px;
 }
 `
 
@@ -116,11 +114,22 @@ span{
     font-weight: 700;
     letter-spacing: 0px;
 }
+
+ @media (max-width: 930px) {
+.basic-skills{
+     margin-left: -10px;
+ }
+}
 @media (max-width: 620px) {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 0px;
+    span{
+        margin: -10px;
+    }
 }
+
 `
 export const IconsContainer = styled.div`
 display: flex;
@@ -137,12 +146,11 @@ img {
 }
 @media (max-width: 470px) {
     justify-content: center;
-    flex-wrap: wrap;
     gap: 15px;
     width: 80vw;
-    gap: 15px;
-    margin: 0 30px;
+    gap: 10px;
 }
+
 `
 
 
@@ -153,7 +161,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 align-self: flex-end;
-margin-top: 30px;
+margin-top: 40px;
     width: 27%;
     img{
 width: 100%;

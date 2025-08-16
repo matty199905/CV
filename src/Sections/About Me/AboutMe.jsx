@@ -58,14 +58,16 @@ const AboutMe = () => {
             <IconsContainer>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title='Git' width="40" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM" title='NPM' width="40" />
-              <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Styled Components" title='Styled-Components' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/vercel-light.svg" alt="Vercel" title='Vercel' height="28" width="30"/>
+
             </IconsContainer>
           </SkillsContainer>
 
 
           <SkillsContainer>
-            <span className='basic-skills'>Basic Skills:</span>
+            <span className='basic-skills'>Styling:</span>
             <IconsContainer>
+              <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Styled Components" title='Styled-Components' width="40" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title='Bootstrap' width="40" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" title='Sass' width="40" />
             </IconsContainer>

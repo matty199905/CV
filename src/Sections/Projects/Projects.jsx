@@ -91,7 +91,7 @@ Incluye registro de usuario e inicio de sesión, sistema de checkout y lógica d
 
 
                 <ProjectCard
-                    description={`Plataforma de streaming de series y películas, desarrollada con React.js y Bootstrap, utilizando la API de TMDB.
+                    description={`Plataforma de streaming de series y películas, desarrollada en CRA con React.js y Bootstrap, utilizando la API de TMDB.
 Incluye barra de búsqueda, filtros por género según la sección, y páginas dinámicas para cada contenido, con sus respectivos tráilers y redireccionamiento a plataformas de streaming externas para su visualización.`}
                     tools={maxFlixTools}
                     projectCode={'https://github.com/matty199905/maxflix'}
@@ -123,7 +123,7 @@ Incluye barra de búsqueda, filtros por género según la sección, y páginas d
 
 
                  <ProjectCard
-                    description={`Librería de cócteles con base de datos personalizada, desarrollada con Vite, React.js y Styled-Components.
+                    description={`Librería de cócteles con base de datos personalizada, desarrollada en Vite con React.js y Styled-Components.
 Incluye filtros avanzados por búsqueda, letra inicial, perfiles de sabor y tipo de alcohol. Cada cóctel cuenta con su receta detallada y método de preparación. La navegación se gestiona con React Router, y el manejo de estado con Redux Toolkit.`}
                     tools={theBooktailTools}
                     projectCode={'https://github.com/matty199905/The-Booktail.git'}

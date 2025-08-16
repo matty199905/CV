@@ -51,7 +51,14 @@ const AboutMe = () => {
             </IconsContainer>
           </SkillsContainer>
 
-
+          <SkillsContainer>
+            <span className='basic-skills'>Styling:</span>
+            <IconsContainer>
+              <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Styled Components" title='Styled-Components' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title='Bootstrap' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" title='Sass' width="40" />
+            </IconsContainer>
+          </SkillsContainer>
 
           <SkillsContainer>
                         <span>Tools:</span>
@@ -64,14 +71,7 @@ const AboutMe = () => {
           </SkillsContainer>
 
 
-          <SkillsContainer>
-            <span className='basic-skills'>Styling:</span>
-            <IconsContainer>
-              <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Styled Components" title='Styled-Components' width="40" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title='Bootstrap' width="40" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" title='Sass' width="40" />
-            </IconsContainer>
-          </SkillsContainer>
+
 
 
         </SkillsWrapper>

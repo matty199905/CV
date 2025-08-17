@@ -46,14 +46,11 @@ const Navbar = () => {
 
 
         <LightIconContainer color={color} onClick={() => setIsOpen(!isOpen)}>
-
           <LuSun className='icon' />
-
         </LightIconContainer>
 
 
 
-        {/* Contenedor del Dropdown */}
         <DropDownContainer
           color={color}
           initial={{ opacity: 0, y: -20 }}
@@ -70,10 +67,9 @@ const Navbar = () => {
 
 
 
-
-
         <ToggleIconContainer
           toggleMenu={'true'}
+          color={color}
 
           onClick={() => {
             dispatch(changeToggleState())

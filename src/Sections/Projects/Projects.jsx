@@ -14,7 +14,6 @@ const Projects = () => {
         'Next JS',
         'Typescript',
         'Styled Components',
-        'React Router',
         'React Redux',
         'JWT',
         'Axios',

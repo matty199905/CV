@@ -11,7 +11,7 @@ align-items: flex-end;
 padding: 20px 30px;
 width: 100vw;
 height: 90px;
-background-color:${(props) => (props.color === 'light' ? '#f5f5f5' : '#131313')};
+background-color:${(props) => (props.color === 'light' ? '#fffff3ff' : '#131313')};
 border-bottom: 2px solid var(--primary);
 z-index: 200;
 `
@@ -29,11 +29,11 @@ align-items: flex-end;
 gap: 30px;
 
 li {
-
     font-size: 15px;
     transition: all .3s ease;
     &:hover{
-        color: orange;
+  color: ${(props)=>(props.color === 'light' ? 'rgba(142, 154, 238, 1)' : 'rgba(198, 205, 255, 1)')};
+ transform: scale(1.05);
         transition: all .3s ease;
     }
 }
@@ -61,8 +61,7 @@ cursor: pointer;
 display: ${(props) => (props.toggleMenu === 'true' ? 'none' : 'flex')} ;
 
     &:hover{
-
-     background-color: orange;
+     background-color: ${(props)=>(props.color === 'light' ? 'rgba(197, 204, 255, 1)' : 'rgba(124, 134, 212, 1)')};
      color: white;
      transition: all .3s ease;
  }

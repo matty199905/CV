@@ -21,7 +21,6 @@ justify-content: center;
 align-items: flex-start;
 width: 40vw;
 padding-top: 30px;
-
 h1{
     font-size: 35px;
     line-height: 52px;
@@ -108,7 +107,11 @@ gap: 20px;
 
 export const SkillsContainer = styled(CvDataContainer)`
 width: 100%;
-margin-bottom: -30px;
+padding: 10px 20px;
+margin-bottom: -25px;
+border-radius:20px;
+background: ${(props)=>(props.bgColor === 'light' ? 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.11));' : 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.3));')};
+backdrop-filter: blur(20px);
 span{
     font-size: 15px;
     font-weight: 700;
@@ -165,7 +168,8 @@ margin-top: 40px;
     width: 27%;
     img{
 width: 100%;
-border-radius: 50px;
+border-radius: 35px;
+box-shadow: ${(props)=>(props.bgColor === 'light' ? '0px 5px 15px rgba(0, 0, 0, 0.24)' : '0px 5px 15px rgba(0, 0, 0, 1)')};
     }
     @media (max-width: 930px) {
 min-height: 500px;

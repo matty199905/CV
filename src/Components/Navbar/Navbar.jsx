@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { DropDownContainer, LightIconContainer, NavbarContainer, NavLogo, SectionsContainer, ToggleIconContainer } from './navbarStyled'
 import { LuSun } from "react-icons/lu";
 import { useDispatch, useSelector } from 'react-redux'
-import { changeBackgroundColor } from '../../../Redux/Background Color/backgroundSlice';
+import { changeBackgroundColor } from '../../Redux/Background Color/backgroundSlice';
 import { CgMenu } from "react-icons/cg";
-import { changeToggleState } from '../../../Redux/ToggleMenu/MenuSlice';
+import { changeToggleState } from '../../Redux/ToggleMenu/MenuSlice';
+
 
 const Navbar = () => {
 
@@ -26,7 +27,7 @@ const Navbar = () => {
         Portfolio
       </NavLogo>
 
-      <SectionsContainer>
+      <SectionsContainer color={color}>
 
         <li className='sections' onClick={() => { window.scrollTo(0, 0)
         }}>Sobre mí</li>
@@ -34,26 +35,17 @@ const Navbar = () => {
 
 
         <li className='sections' onClick={() => {
-          if (window.innerWidth < 930) {
-            window.scrollTo(0, 970);
-          } else {
-            window.scrollTo(0, 620);
-          } 
-        
+     document.getElementById("proyects")?.scrollIntoView();
         }}>Proyectos</li>
 
 
 
         <li className='sections' onClick={() => {
-          if (window.innerWidth < 930) {
-            window.scrollTo(0, 2150);
-          } else {
-            window.scrollTo(0, 1850);
-          } 
+           document.getElementById("contact")?.scrollIntoView();
         }}>Contacto</li>
 
 
-        <LightIconContainer onClick={() => setIsOpen(!isOpen)}>
+        <LightIconContainer color={color} onClick={() => setIsOpen(!isOpen)}>
 
           <LuSun className='icon' />
 

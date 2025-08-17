@@ -16,7 +16,7 @@ const AboutMe = () => {
 
 
   return (
-    <AboutMeWrapper >
+    <AboutMeWrapper>
 
 
 
@@ -37,7 +37,7 @@ const AboutMe = () => {
 
         <SkillsWrapper>
 
-          <SkillsContainer>
+          <SkillsContainer bgColor={color}>
 
             <span>Stack:</span>
 
@@ -51,7 +51,7 @@ const AboutMe = () => {
             </IconsContainer>
           </SkillsContainer>
 
-          <SkillsContainer>
+          <SkillsContainer bgColor={color}>
             <span className='basic-skills'>Styling:</span>
             <IconsContainer>
               <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Styled Components" title='Styled-Components' width="40" />
@@ -60,7 +60,7 @@ const AboutMe = () => {
             </IconsContainer>
           </SkillsContainer>
 
-          <SkillsContainer>
+          <SkillsContainer bgColor={color}>
                         <span>Tools:</span>
             <IconsContainer>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title='Git' width="40" />
@@ -81,7 +81,7 @@ const AboutMe = () => {
       </InfoContainer>
 
 
-      <ProfilePhoto>
+      <ProfilePhoto bgColor={color}>
         <img src="/IMG_20180915_130837_329.jpg" alt="foto" />
       </ProfilePhoto>
 

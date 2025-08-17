@@ -12,7 +12,7 @@ const Contact = () => {
     const color = useSelector(state => state.Background?.color)
 
     return (
-        <ContactWrapper color={color}>
+        <ContactWrapper color={color} id='contact'>
 
             <h2>CONCTACTO</h2>
 

@@ -1,17 +1,19 @@
-import Footer from "./Layouts/Footer/Footer";
-import Layout from "./Layouts/Layout/Layout";
-import Navbar from "./Layouts/Navbar/Navbar/Navbar";
-import ResponsiveNavbar from "./Layouts/Navbar/ResponsiveNav/ResponsiveNavbar";
+import Footer from "./Components/Footer/Footer";
+import Layout from "./Components/Layout/Layout";
+import Navbar from "./Components/Navbar/Navbar";
+import ResponsiveNavbar from "./Components/Navbar/ResponsiveNav/ResponsiveNavbar";
 import AboutMe from "./Sections/About Me/AboutMe";
 import Contact from "./Sections/Contact/Contact";
 import Projects from "./Sections/Projects/Projects";
-
-
-
+import { useSelector } from 'react-redux';
+import GlobalStyles from './Styles/globalStyles';
 function App() {
-  return (
 
+    const {color}  = useSelector(state => state.Background);
+
+  return (
     <Layout>
+      <GlobalStyles bgcolor={color} />
       <Navbar />
       <ResponsiveNavbar/>
       <AboutMe />
@@ -19,7 +21,6 @@ function App() {
       <Contact/>
       <Footer/>
     </Layout>
-
   );
 }
 

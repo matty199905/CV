@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 
 export const ResponsiveNavContainer = styled(motion.div)`
@@ -13,7 +13,7 @@ width: 100vw;
 height: 220px;
 border-bottom-left-radius:20px ;
 border-bottom-right-radius:20px ;
-background: linear-gradient(to top, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.3));
+background: ${(props)=>(props.bgColor === 'light' ? 'linear-gradient(to bottom, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.16));' : 'linear-gradient(to top, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.3));')};
 backdrop-filter: blur(20px);
 z-index: 199;
 ul{
@@ -27,11 +27,12 @@ ul{
         font-size: 18px;
 
     }
-    div {
-        height: 0.5px;
-        width: 100vw;
-        background-color: ${(props)=>(props.bgcolor === 'light' ? 'rgba(1, 1, 1, 0.3)' : 'rgba(255, 255, 255, 0.31)')};
-    }
-}
+ }
+`
 
+export const Separator = styled.div`
+        height: 1px;
+        width: 100vw;
+        background-color: ${(props) => (props.bgColor === 'light' ? 'rgba(0, 0, 0, 0.5)' : 'rgba(255, 255, 255, 0.31)')};
+    
 `

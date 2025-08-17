@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 
-
-export const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 
 :root {
   --primary: ${(props) => (props.bgcolor === 'light' ? 'rgba(3, 0, 97, 0.17)' : 'rgba(119, 137, 253, 0.32)')} 
@@ -39,7 +38,7 @@ overflow-x: hidden;
 }
   body {
     letter-spacing: 1px;
-    background-color: ${(props) => (props.bgcolor === 'light' ? '#f5f5f5' : '#131313')};
+    background: ${(props) => (props.bgcolor === 'light' ? 'linear-gradient(rgba(251, 249, 224, 1), rgba(212, 209, 171, 1),rgba(255, 255, 255, 1))' : 'linear-gradient(rgba(35, 35, 35, 1), rgba(0, 0, 0, 1))')};
     color: ${(props) => (props.bgcolor === 'light' ? 'black' : 'white')};
     font-family: "Poppins", sans-serif;
   }
@@ -50,11 +49,17 @@ overflow-x: hidden;
   }
 
  li{
-list-style: none;
-cursor: pointer;
+   list-style: none;
+   cursor: pointer;
  }
 
   button {
     cursor: pointer;
   }
+
+ #contact, #proyects {
+  scroll-margin-top: 120px;
+ }
 `
+
+export default GlobalStyles;

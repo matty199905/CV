@@ -51,7 +51,7 @@ const Projects = () => {
 
 
     return (
-        <ProjectsWrapper color={color}>
+        <ProjectsWrapper color={color} id='proyects'>
 
             <h2>PROYECTOS PERSONALES</h2>
 

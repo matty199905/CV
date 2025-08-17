@@ -1,5 +1,5 @@
  
-import { ResponsiveNavContainer } from './responsiveStyled'
+import { ResponsiveNavContainer, Separator } from './responsiveStyled'
 import { AnimatePresence } from 'framer-motion';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeToggleState } from '../../../Redux/ToggleMenu/MenuSlice';
@@ -19,6 +19,7 @@ const ResponsiveNavbar = () => {
             {toggleMenu && 
             
             <ResponsiveNavContainer
+                bgColor={color}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
@@ -27,10 +28,10 @@ const ResponsiveNavbar = () => {
                 >
                 <ul>
                     <li onClick={() => { window.scroll(0, 0); dispatch(changeToggleState()) }}>Sobre mí</li>
-                    <div bgcolor={color}/>
-                    <li onClick={() => { window.scroll(0, 1130); dispatch(changeToggleState()) }}>Proyectos</li>
-                    <div bgcolor={color}/>
-                    <li onClick={() => { window.scroll(0, 2850); dispatch(changeToggleState()) }}>Contacto</li>
+                    <Separator bgColor={color}/>
+                    <li onClick={() => { document.getElementById("proyects")?.scrollIntoView(); dispatch(changeToggleState()) }}>Proyectos</li>
+                    <Separator bgColor={color}/>
+                    <li onClick={() => { document.getElementById("contact")?.scrollIntoView();; dispatch(changeToggleState()) }}>Contacto</li>
                 </ul>
             </ResponsiveNavContainer>}
 

@@ -30,7 +30,9 @@ const AboutMe = () => {
           <a href="https://www.linkedin.com/in/matias-bottcher-09b780215/" target='_blank' rel="noreferrer"><SocialContact><FaLinkedin className='linkedin' /></SocialContact></a>
           <a href="https://github.com/matty199905" target='_blank' rel="noreferrer"><SocialContact><FaGithub className='github' /></SocialContact></a>
 
-          <a href="Archives/CV-ProgramadorFrontend.pdf" download><Button download={"true"} type='file'>DESCARGAR CV</Button></a>
+          <a href="Archives/CV-ProgramadorFrontend.pdf" download>
+            <Button download={"true"} type='file'>DESCARGAR CV</Button>
+          </a>
 
         </CvDataContainer>
 
@@ -61,11 +63,11 @@ const AboutMe = () => {
           </SkillsContainer>
 
           <SkillsContainer bgColor={color}>
-                        <span>Tools:</span>
+            <span>Tools:</span>
             <IconsContainer>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title='Git' width="40" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM" title='NPM' width="40" />
-              <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/vercel-light.svg" alt="Vercel" title='Vercel' height="28" width="30"/>
+              <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/vercel-light.svg" alt="Vercel" title='Vercel' height="28" width="30" />
 
             </IconsContainer>
           </SkillsContainer>

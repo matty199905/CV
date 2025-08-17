@@ -20,8 +20,6 @@ transition: all 0.2s ease;
 background-color: orange;
 color:white;
 transition: all 0.2s ease;
-font-size: 15.5px;
-font-weight: 700;
 }
 @media (max-width:930px) {
 scale: ${(props)=>(props.download ? '0.9': 'none')};

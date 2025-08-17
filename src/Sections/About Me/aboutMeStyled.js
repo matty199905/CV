@@ -107,6 +107,7 @@ gap: 20px;
 
 export const SkillsContainer = styled(CvDataContainer)`
 width: 100%;
+height: auto;
 padding: 10px 20px;
 margin-bottom: -25px;
 border-radius:20px;
@@ -127,8 +128,8 @@ span{
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 0px;
-    span{
+    padding-top: 15px;
+        span{
         margin: -10px;
     }
 }

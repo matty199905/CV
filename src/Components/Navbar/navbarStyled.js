@@ -32,8 +32,7 @@ li {
     font-size: 15px;
     transition: all .3s ease;
     &:hover{
-  color: ${(props)=>(props.color === 'light' ? 'rgba(142, 154, 238, 1)' : 'rgba(198, 205, 255, 1)')};
- transform: scale(1.05);
+  color: ${(props) => (props.color === 'light' ? 'rgba(142, 154, 238, 1)' : 'rgba(198, 205, 255, 1)')};
         transition: all .3s ease;
     }
 }
@@ -61,7 +60,7 @@ cursor: pointer;
 display: ${(props) => (props.toggleMenu === 'true' ? 'none' : 'flex')} ;
 
     &:hover{
-     background-color: ${(props)=>(props.color === 'light' ? 'rgba(197, 204, 255, 1)' : 'rgba(124, 134, 212, 1)')};
+     background-color: ${(props) => (props.color === 'light' ? 'rgba(197, 204, 255, 1)' : 'rgba(124, 134, 212, 1)')};
      color: white;
      transition: all .3s ease;
  }

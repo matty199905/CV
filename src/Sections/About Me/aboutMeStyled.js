@@ -22,8 +22,11 @@ align-items: flex-start;
 width: 40vw;
 padding-top: 30px;
 h1{
-    font-size: 35px;
-    line-height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size:  35px;
+  line-height: 52px;
     @media (max-width: 476px) {
 font-size: 30px;
 width: 90vw
@@ -33,7 +36,7 @@ width: 90vw
 h2 {
     font-size:25px;
     font-weight: 800;
-    color:${(props) => (props.color === 'light' ? ' rgba(3, 0, 97, 0.73)' : 'rgba(135, 131, 251, 0.77)')};
+    color:${(props) => (props.color === 'light' ? ' rgba(3, 0, 97, 0.73)' : 'rgba(127, 235, 239, 0.87)')};
     @media (max-width: 476px) {
 font-size: 20px;
 width: 90vw;
@@ -94,11 +97,16 @@ export const SkillsWrapper = styled.div`
 display:flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 padding: 0;
+height: auto;
 @media (max-width: 620px) {
 margin-top: 40px;
 gap: 20px;
+align-items: center;
+}
+@media (max-width: 930px) {
+align-items: center;
 }
 `
 
@@ -111,7 +119,7 @@ height: auto;
 padding: 10px 20px;
 margin-bottom: -25px;
 border-radius:20px;
-background: ${(props)=>(props.bgColor === 'light' ? 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.11));' : 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.3));')};
+background: ${(props) => (props.bgColor === 'light' ? 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.11));' : 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.3));')};
 backdrop-filter: blur(20px);
 span{
     font-size: 15px;
@@ -150,8 +158,6 @@ img {
 }
 @media (max-width: 470px) {
     justify-content: center;
-    gap: 15px;
-    width: 80vw;
     gap: 10px;
 }
 
@@ -170,7 +176,7 @@ margin-top: 40px;
     img{
 width: 100%;
 border-radius: 35px;
-box-shadow: ${(props)=>(props.bgColor === 'light' ? '0px 5px 15px rgba(0, 0, 0, 0.24)' : '0px 5px 15px rgba(0, 0, 0, 1)')};
+box-shadow: ${(props) => (props.bgColor === 'light' ? '0px 5px 15px rgba(0, 0, 0, 0.24)' : '0px 5px 15px rgba(0, 0, 0, 1)')};
     }
     @media (max-width: 930px) {
 min-height: 500px;

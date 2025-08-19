@@ -11,14 +11,14 @@ border-radius: 15px;
 margin-left: ${(props)=>(props.download ? '20px' : '0px')};
 margin-top: ${(props)=>(!props.download ? '10px' : '0px')};
 border: none;
-padding: ${(props)=>(props.download ? '30px 20px' : '0px')};;;
-background-color: ${(props) => (props.color === 'light' ? 'darkblue' : 'rgba(103, 98, 255, 0.77)')};
+padding: ${(props)=>(props.download ? '27px 20px' : '0px')};
+background-color: ${(props) => (props.color === 'light' ? 'darkblue' :  'rgba(92, 161, 172, 0.87)')};
 color: white;
 font-size: ${(props)=>(props.download ? '15px' : '14px')} ;
 transition: all 0.2s ease;
 &:hover{
-background-color: orange;
-color:white;
+background-color: rgba(166, 240, 252, 0.87);
+color:black;
 transition: all 0.2s ease;
 }
 @media (max-width:930px) {

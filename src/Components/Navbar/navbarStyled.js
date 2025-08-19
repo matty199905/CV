@@ -11,7 +11,8 @@ align-items: flex-end;
 padding: 20px 30px;
 width: 100vw;
 height: 90px;
-background-color:${(props) => (props.color === 'light' ? '#fffff3ff' : '#131313')};
+background:${(props) => (props.color === 'light' ? '#fffff3ff' : 'linear-gradient(to top, rgba(17, 17, 17, 0.42), rgba(112, 112, 112, 0.17))')};
+backdrop-filter: blur(10px);
 border-bottom: 2px solid var(--primary);
 z-index: 200;
 `

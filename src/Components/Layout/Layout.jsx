@@ -1,5 +1,4 @@
- 
-import { LayoutWrapper } from './layoutStyled'
+ import { LayoutWrapper } from './layoutStyled'
 
 const Layout = ({ children }) => {
   return (

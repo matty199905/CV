@@ -16,7 +16,7 @@ background-color: ${(props) => (props.color === 'light' ? 'darkblue' :  'rgba(69
 color: white;
 font-size: ${(props)=>(props.download ? '15px' : '14px')} ;
 transition: all 0.2s ease;
-box-shadow: inset 0px 0px 20px rgba(1, 81, 94, 1);
+box-shadow: inset 0px 0px 20px rgba(0, 126, 146, 1);
 &:hover{
 background-color: rgba(166, 240, 252, 0.87);
 color:black;

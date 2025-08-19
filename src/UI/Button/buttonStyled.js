@@ -12,13 +12,15 @@ margin-left: ${(props)=>(props.download ? '20px' : '0px')};
 margin-top: ${(props)=>(!props.download ? '10px' : '0px')};
 border: none;
 padding: ${(props)=>(props.download ? '27px 20px' : '0px')};
-background-color: ${(props) => (props.color === 'light' ? 'darkblue' :  'rgba(92, 161, 172, 0.87)')};
+background-color: ${(props) => (props.color === 'light' ? 'darkblue' :  'rgba(69, 188, 207, 0.87)')};
 color: white;
 font-size: ${(props)=>(props.download ? '15px' : '14px')} ;
 transition: all 0.2s ease;
+box-shadow: inset 0px 0px 10px rgba(1, 124, 143, 0.87);
 &:hover{
 background-color: rgba(166, 240, 252, 0.87);
 color:black;
+box-shadow: none;
 transition: all 0.2s ease;
 }
 @media (max-width:930px) {

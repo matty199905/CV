@@ -36,7 +36,8 @@ width: 90vw
 h2 {
     font-size:25px;
     font-weight: 800;
-    color:${(props) => (props.color === 'light' ? ' rgba(3, 0, 97, 0.73)' : 'rgba(127, 235, 239, 0.87)')};
+    color:${(props) => (props.color === 'light' ? ' rgba(3, 0, 97, 0.73)' : 'rgba(110, 202, 205, 0.87)')};
+    text-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
     @media (max-width: 476px) {
 font-size: 20px;
 width: 90vw;
@@ -119,8 +120,9 @@ height: auto;
 padding: 10px 20px;
 margin-bottom: -25px;
 border-radius:20px;
-background: ${(props) => (props.bgColor === 'light' ? 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.11));' : 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.3));')};
-backdrop-filter: blur(20px);
+background: ${(props) => (props.bgColor === 'light' ? 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.11));' : 
+    'linear-gradient(to left, rgba(255, 255, 255, 0.11), rgba(81, 81, 81, 0.1), rgba(1, 1, 1, 0.43));')};
+backdrop-filter: blur( 10px);
 span{
     font-size: 15px;
     font-weight: 700;

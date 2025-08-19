@@ -8,14 +8,14 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 margin-top: 40px;
-width: 500px;
+width: 300px;
 height: 450px;
 h3{
     margin-top: 10px;
 }
 `
 
-export const ProjectContainer = styled(motion.div)`
+export const ProjectImg = styled(motion.div)`
 position: relative;
 width: 100%;
 height: 100%;

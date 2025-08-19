@@ -45,7 +45,7 @@ const Projects = () => {
         'React Redux',
         'React Icons',
         'Framer Motion',
-    
+
     ].map((item) => { return <li>{item}</li> })
 
 
@@ -57,37 +57,38 @@ const Projects = () => {
 
             <ProjectsContainer>
 
-                <ProjectCard
-                    description={`E-commerce desarrollado con Next.js y Styled-Components.
+
+       
+                    <ProjectCard
+                        description={`E-commerce desarrollado con Next.js y Styled-Components.
 Incluye registro de usuario e inicio de sesión, sistema de checkout y lógica de órdenes con rutas privadas. Cuenta con un medio de contacto con respuesta automática. Todas las funcionalidades se integran mediante el uso de APIs REST.`}
-                    tools={eCommerceTools}
-                    projectCode={'https://github.com/matty199905/eCommerce-NextJs.git'}
-                    redirect={"https://bottcherstore-ten.vercel.app/"}
-                    title={"Bottchers"}>
+                        tools={eCommerceTools}
+                        projectCode={'https://github.com/matty199905/eCommerce-NextJs.git'}
+                        redirect={"https://bottcherstore-ten.vercel.app/"}
+                        title={"Bottchers"}>
 
-                    <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
-                        <iframe
-                            src="https://bottcherstore-ten.vercel.app/"
-                            title="Bottchers"
-                            width="100%"
-                            height="100%"
-                            style={{
-                                borderRadius: "20px",
-                                border: "none",
-                                transform: "scale(0.4)",
-                                transformOrigin: "0 0",
-                                width: "250%",
-                                height: "250%",
-                                pointerEvents: "none",
-                                overflow: "hidden",
+                        <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
+                            <iframe
+                                src="https://bottcherstore-ten.vercel.app/"
+                                title="Bottchers"
+                                width="100%"
+                                height="100%"
+                                style={{
+                                    borderRadius: "20px",
+                                    border: "none",
+                                    transform: "scale(0.4)",
+                                    transformOrigin: "0 0",
+                                    width: "250%",
+                                    height: "250%",
+                                    pointerEvents: "none",
+                                    overflow: "hidden",
 
-                            }}
-                        ></iframe>
-                    </div>
+                                }}
+                            ></iframe>
+                        </div>
 
-                </ProjectCard>
-
-
+                    </ProjectCard>
+       
 
                 <ProjectCard
                     description={`Plataforma de streaming de series y películas, desarrollada en CRA con React.js y Bootstrap, utilizando la API de TMDB.
@@ -120,8 +121,7 @@ Incluye barra de búsqueda, filtros por género según la sección, y páginas d
                 </ProjectCard>
 
 
-
-                 <ProjectCard
+                <ProjectCard
                     description={`Librería de cócteles con base de datos personalizada, desarrollada en Vite con React.js y Styled-Components.
 Incluye filtros avanzados por búsqueda, letra inicial, perfiles de sabor y tipo de alcohol. Cada cóctel cuenta con su receta detallada y método de preparación. La navegación se gestiona con React Router, y el manejo de estado con Redux Toolkit.`}
                     tools={theBooktailTools}
@@ -150,6 +150,7 @@ Incluye filtros avanzados por búsqueda, letra inicial, perfiles de sabor y tipo
                     </div>
 
                 </ProjectCard>
+
 
             </ProjectsContainer>
 

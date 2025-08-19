@@ -7,7 +7,7 @@ flex-direction: column;
 justify-content: flex-end;
 align-items: center;
 position: absolute;
-width: 100%;
+width: auto;
 height: 400px;
 border-radius: 20px;
 background-color: rgba(3, 0, 97, 0.7);

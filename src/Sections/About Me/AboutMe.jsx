@@ -11,8 +11,6 @@ import ShinyText from '../../Components/React Bits/ShinyText/ShinyText';
 
 
 
-
-
 const AboutMe = () => {
 
   const color = useSelector(state => state.Background?.color)
@@ -159,6 +157,7 @@ const AboutMe = () => {
       <ProfilePhoto bgColor={color}>
         <img src="/IMG_20180915_130837_329.jpg" alt="foto" />
       </ProfilePhoto>
+     
 
 
     </AboutMeWrapper>

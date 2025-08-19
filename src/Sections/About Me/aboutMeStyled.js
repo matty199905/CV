@@ -37,7 +37,7 @@ h2 {
     font-size:25px;
     font-weight: 800;
     color:${(props) => (props.color === 'light' ? ' rgba(3, 0, 97, 0.73)' : 'rgba(110, 202, 205, 0.87)')};
-    text-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+    text-shadow: ${(props) => (props.color === 'dark' ? '0px 0px 40px rgba(0, 0, 0, 1)' : 'none')} ;
     @media (max-width: 476px) {
 font-size: 20px;
 width: 90vw;

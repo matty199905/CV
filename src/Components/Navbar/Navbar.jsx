@@ -6,6 +6,8 @@ import { changeBackgroundColor } from '../../Redux/Background Color/backgroundSl
 import { CgMenu } from "react-icons/cg";
 import { changeToggleState } from '../../Redux/ToggleMenu/MenuSlice';
 
+
+
 const Navbar = () => {
 
 
@@ -21,8 +23,12 @@ const Navbar = () => {
 
     
 
-
-      <NavbarContainer color={color}>
+      <NavbarContainer 
+      color={color}
+      initial={{ y: -100, opacity: 0 }}   
+      animate={{ y: 0, opacity: 1 }}     
+      transition={{ delay: 0.4,duration: 1.5, ease: "easeOut" }}
+      className="fixed top-0 left-0 w-full bg-white shadow-md">
 
         <NavLogo>
           Portfolio
@@ -86,6 +92,7 @@ const Navbar = () => {
         </DropDownThemeContainer>
 
       </NavbarContainer>
+  
 
 
   )

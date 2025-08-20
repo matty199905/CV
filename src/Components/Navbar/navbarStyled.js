@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from 'framer-motion'
 
 
-export const NavbarContainer = styled.nav`
+export const NavbarContainer = styled(motion.nav)`
 position: fixed;
 top: 25px;
 display: flex;
@@ -58,14 +58,14 @@ align-items: center;
 width: 40px;
 height: 40px;
 margin-bottom: -8px;
-border: 2px solid var(--primary);
+border-bottom:  2px solid rgba(255, 255, 255, 0.33);
 border-radius: 10px;
 font-size: 21px;
 cursor: pointer;
 display: ${(props) => (props.toggleMenu === 'true' ? 'none' : 'flex')} ;
 
     &:hover{
-     background-color: ${(props) => (props.color === 'light' ? 'rgba(197, 204, 255, 1)' : 'rgba(124, 134, 212, 1)')};
+     background-color: ${(props) => (props.color === 'light' ? 'rgba(197, 204, 255, 1)' : 'rgba(142, 152, 226, 0.77)')};
      color: white;
      transition: all .3s ease;
  }

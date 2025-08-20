@@ -29,57 +29,60 @@ const Navbar = () => {
 
       <SectionsContainer color={color}>
 
-        <li className='sections' onClick={() => { window.scrollTo(0, 0)
+        <li className='sections' onClick={() => {
+          window.scrollTo(0, 0)
         }}>Sobre mí</li>
 
 
 
         <li className='sections' onClick={() => {
-     document.getElementById("proyects")?.scrollIntoView();
+          document.getElementById("proyects")?.scrollIntoView();
         }}>Proyectos</li>
 
 
 
         <li className='sections' onClick={() => {
-           document.getElementById("contact")?.scrollIntoView();
+          document.getElementById("contact")?.scrollIntoView();
         }}>Contacto</li>
 
 
-        <LightIconContainer color={color} onClick={() => setIsOpen(!isOpen)}>
-          <LuSun className='icon' />
-        </LightIconContainer>
+        <li>
+          <LightIconContainer color={color} onClick={() => setIsOpen(!isOpen)}>
+            <LuSun className='icon' />
+          </LightIconContainer>
+        </li>
 
 
 
-        <DropDownContainer
-          color={color}
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.3 }}
-          key="dropDown-bgcolor"
-          isOpen={isOpen}>
-          <ul >
-            <li onClick={() => { dispatch(changeBackgroundColor('light')); setIsOpen(!isOpen) }}>Light</li>
-            <li onClick={() => { dispatch(changeBackgroundColor('dark')); setIsOpen(!isOpen) }}>Dark</li>
-          </ul>
-        </DropDownContainer>
+        <li>
+          <ToggleIconContainer
+            toggleMenu={'true'}
+            color={color}
 
+            onClick={() => {
+              dispatch(changeToggleState())
+            }
+            }>
+            <CgMenu />
+          </ToggleIconContainer>
+        </li>
 
-
-        <ToggleIconContainer
-          toggleMenu={'true'}
-          color={color}
-
-          onClick={() => {
-            dispatch(changeToggleState())
-          }
-          }>
-          <CgMenu />
-        </ToggleIconContainer>
 
       </SectionsContainer>
 
+      <DropDownContainer
+        color={color}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.3 }}
+        key="dropDown-bgcolor"
+        isOpen={isOpen}>
+        <ul >
+          <li onClick={() => { dispatch(changeBackgroundColor('light')); setIsOpen(!isOpen) }}>Light</li>
+          <li onClick={() => { dispatch(changeBackgroundColor('dark')); setIsOpen(!isOpen) }}>Dark</li>
+        </ul>
+      </DropDownContainer>
 
     </NavbarContainer>
 

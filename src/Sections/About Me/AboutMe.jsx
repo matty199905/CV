@@ -25,18 +25,18 @@ const AboutMe = () => {
         <h1>
           {
             color === 'dark' ?
-          <TextType
-          text={"Hola 👋, soy \nMatías Bottcher!"}
-          typingSpeed={75}
-          pauseDuration={1500}
-          showCursor={true}
-          cursorCharacter="_"
-        />
-        :
-        <>
-        Hola 👋, <br/>
-        soy Matías Bottcher!
-        </>
+              <TextType
+                text={"Hola 👋, soy \nMatías Bottcher!"}
+                typingSpeed={75}
+                pauseDuration={1500}
+                showCursor={true}
+                cursorCharacter="_"
+              />
+              :
+              <>
+                Hola 👋, <br />
+                soy Matías Bottcher!
+              </>
           }
         </h1>
 
@@ -60,8 +60,17 @@ const AboutMe = () => {
 
         <CvDataContainer>
 
-          <a href="https://www.linkedin.com/in/matias-bottcher-09b780215/" target='_blank' rel="noreferrer"><SocialContact><FaLinkedin className='linkedin' /></SocialContact></a>
-          <a href="https://github.com/matty199905" target='_blank' rel="noreferrer"><SocialContact><FaGithub className='github' /></SocialContact></a>
+          <a href="https://www.linkedin.com/in/matias-bottcher-09b780215/" target='_blank' rel="noreferrer" aria-label='Linkedin'>
+            <SocialContact>
+              <FaLinkedin className='linkedin' />
+            </SocialContact>
+          </a>
+
+          <a href="https://github.com/matty199905" target='_blank' rel="noreferrer" aria-label='Github'>
+            <SocialContact>
+              <FaGithub className='github' />
+            </SocialContact>
+          </a>
 
           <a href="Archives/CV-ProgramadorFrontend.pdf" download>
             <Button download={"true"} type='file'>DESCARGAR CV</Button>
@@ -134,7 +143,7 @@ const AboutMe = () => {
             animateOpacity
             scale={1.1}
             threshold={0.1}
-            delay={1.6}
+            delay={1.4}
           >
             <SkillsContainer bgColor={color}>
               <span>Tools:</span>
@@ -157,7 +166,7 @@ const AboutMe = () => {
       <ProfilePhoto bgColor={color}>
         <img src="/IMG_20180915_130837_329.jpg" alt="foto" />
       </ProfilePhoto>
-     
+
 
 
     </AboutMeWrapper>

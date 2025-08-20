@@ -38,7 +38,9 @@ overflow-x: hidden;
 }
   body {
     letter-spacing: 1px;
-    background: ${(props) => (props.bgcolor === 'light' ? 'linear-gradient(rgba(251, 249, 224, 1), rgba(255, 255, 255, 1))' : 'linear-gradient(rgba(35, 35, 35, 1), rgba(0, 0, 0, 1))')};
+    background: ${(props) => (props.bgcolor === 'light' ? 'linear-gradient(rgba(251, 249, 224, 1), rgba(255, 255, 255, 1))'
+    :
+    'linear-gradient(rgba(35, 35, 35, 1), rgba(0, 0, 0, 1))')};
     color: ${(props) => (props.bgcolor === 'light' ? 'black' : 'white')};
     font-family: "Poppins", sans-serif;
   }

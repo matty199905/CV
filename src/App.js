@@ -1,7 +1,7 @@
 import Footer from "./Components/Footer/Footer";
 import Layout from "./Components/Layout/Layout";
 import Navbar from "./Components/Navbar/Navbar";
-import ResponsiveNavbar from "./Components/Navbar/ResponsiveNav/ResponsiveNavbar";
+import ResponsiveMenu from "./Components/Navbar/ResponsiveMenu/ResponsiveMenu";
 import AboutMe from "./Sections/About Me/AboutMe";
 import Contact from "./Sections/Contact/Contact";
 import Projects from "./Sections/Projects/Projects";
@@ -17,7 +17,7 @@ function App() {
     <Layout>
       <GlobalStyles bgcolor={color} />
       <Navbar />
-      <ResponsiveNavbar />
+      <ResponsiveMenu />
       <AboutMe />
       <Projects />
       <Contact />

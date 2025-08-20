@@ -1,5 +1,5 @@
 
-import { AboutMeWrapper, CvDataContainer, IconsContainer, InfoContainer, ProfilePhoto, SkillsContainer, SkillsWrapper, SocialContact } from './aboutMeStyled'
+import { AboutMeWrapper, CvDataContainer, IconsContainer, InfoContainer, ProfilePhotoContainer, SkillsContainer, SkillsWrapper, SocialContact } from './aboutMeStyled'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Button from '../../UI/Button/Button';
@@ -163,9 +163,9 @@ const AboutMe = () => {
 
 
 
-      <ProfilePhoto bgColor={color}>
+      <ProfilePhotoContainer bgColor={color}>
         <img src="/IMG_20180915_130837_329.jpg" alt="foto" />
-      </ProfilePhoto>
+      </ProfilePhotoContainer>
 
 
 

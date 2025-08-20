@@ -4,17 +4,21 @@ import { motion } from 'framer-motion'
 
 export const NavbarContainer = styled.nav`
 position: fixed;
-top: 0;
+top: 25px;
 display: flex;
 justify-content: space-between;
 align-items: flex-end;
 padding: 20px 30px;
-width: 100vw;
+width: 70vw;
 height: 90px;
-background:${(props) => (props.color === 'light' ? '#fffff3ff' : 'linear-gradient(to top, rgba(17, 17, 17, 0.42), rgba(112, 112, 112, 0.17))')};
-backdrop-filter: blur(10px);
-border-bottom: 2px solid var(--primary);
+background:${(props) => (props.color === 'light' ? '#fffff3ff' : 'linear-gradient(to top, rgba(17, 17, 17, 0.42), rgba(112, 112, 112, 0.17),  rgba(255, 255, 255, 0.16))')};
+backdrop-filter: blur(4px);
+border-bottom: 2px solid rgba(255, 255, 255, 0.33);
+border-radius: 40px;
 z-index: 200;
+ @media (max-width: 415px) {
+width: 95vw;
+}
 `
 
 export const NavLogo = styled.span`
@@ -39,7 +43,7 @@ li {
 }
 
    li.sections {
- @media (max-width: 650px) {
+ @media (max-width: 870px) {
 display: none;
     
 }
@@ -67,14 +71,13 @@ display: ${(props) => (props.toggleMenu === 'true' ? 'none' : 'flex')} ;
  }
  @media (max-width: 650px) {
 margin-bottom: 0px;
-display: ${(props) => (props.toggleMenu === 'true' ? 'flex' : 'undefined')} ;
-
+display: ${(props) => (props.toggleMenu === 'true' ? 'flex' : 'undefined')};
 }
 
 `
 
 
-export const DropDownContainer = styled(motion.div)`
+export const DropDownThemeContainer = styled(motion.div)`
             position: absolute;
             top: 90px;
             right: 15px;
@@ -103,7 +106,7 @@ export const DropDownContainer = styled(motion.div)`
 export const ToggleIconContainer = styled(LightIconContainer)`
 margin-left: -15px;
 display: none;
-@media (max-width: 650px) {
+@media (max-width: 870px) {
 display: flex ;
 }
 `

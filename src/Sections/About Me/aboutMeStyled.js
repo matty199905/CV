@@ -7,11 +7,7 @@ justify-content: space-around;
 align-items: center;
 width: 100%;
 height: auto;
-margin-top: 110px;
-padding-top: 15px;
-@media (min-width: 930px) {
-    margin-top: 80px;
-}
+padding-top: 105px;
 `
 
 export const InfoContainer = styled.div`
@@ -28,7 +24,7 @@ h1{
   font-size:  35px;
   line-height: 52px;
     @media (max-width: 476px) {
-font-size: 30px;
+font-size: 28px;
 width: 90vw
 }
 
@@ -168,12 +164,12 @@ img {
 
 
 
-export const ProfilePhoto = styled.div`
+export const ProfilePhotoContainer = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
 align-self: flex-end;
-margin-top: 40px;
+margin-top: 50px;
     width: 27%;
     img{
 width: 100%;
@@ -181,14 +177,8 @@ border-radius: 35px;
 box-shadow: ${(props) => (props.bgColor === 'light' ? '0px 5px 15px rgba(0, 0, 0, 0.24)' : '0px 5px 15px rgba(0, 0, 0, 1)')};
     }
     @media (max-width: 930px) {
-min-height: 500px;
-min-width: 250px;
-margin-top: -60px;
-}
-@media (max-width: 435px) {
-min-height: 400px;
-min-width: 220px;
-margin-top: -30px;
-margin-bottom: 30px;
+width:200px;
+height: auto;
+margin-bottom: 85px;
 }
   `

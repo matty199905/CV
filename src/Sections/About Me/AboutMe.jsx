@@ -42,7 +42,7 @@ const AboutMe = () => {
 
         <h2>FRONT-END DEVELOPER</h2>
 
-        <p>
+        
           {
             color === 'dark' ?
               <ShinyText
@@ -56,7 +56,7 @@ const AboutMe = () => {
               '         Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías.'
 
           }
-        </p>
+        
 
         <CvDataContainer>
 

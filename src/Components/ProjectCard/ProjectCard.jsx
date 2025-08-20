@@ -16,7 +16,7 @@ const ProjectCard = ({ children, title, redirect, description, tools, projectCod
 
   return (
 
-    <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+    <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0}>
       <ProjectWrapper>
 
 

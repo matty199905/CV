@@ -19,9 +19,8 @@ const ProjectCard = ({ children, title, redirect, description, tools, projectCod
     <ProjectWrapper>
 
       <ProjectImg
-        initial={{ opacity: 0, filter: "blur(10px)" }}
-        animate={{ opacity: 1, filter: "blur(0px)", rotateY: flipped ? -180 : 0 }}
-        transition={{ duration: flipped ? 0.7 : 1, ease: "easeInOut" }}
+        animate={{ rotateY: flipped ? -180 : 0 }}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
         flipped={flipped}
         onClick={(e) => {
           if (flipped) {

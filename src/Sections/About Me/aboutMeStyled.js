@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const AboutMeWrapper = styled.section`
 display: flex;
@@ -110,14 +111,18 @@ align-items: center;
 
 
 
-export const SkillsContainer = styled(CvDataContainer)`
+export const SkillsContainer = styled(motion.div)`
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 15px;
 width: 100%;
 height: auto;
 padding: 10px 20px;
-margin-bottom: -25px;
+margin:30px 0 -25px 0;
 border-radius:20px;
-background: ${(props) => (props.bgColor === 'light' ? 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.11));' : 
-    'linear-gradient(to left, rgba(255, 255, 255, 0.11), rgba(81, 81, 81, 0.1), rgba(1, 1, 1, 0.43));')};
+background: ${(props) => (props.bgColor === 'light' ? 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.11));' :
+        'linear-gradient(to left, rgba(255, 255, 255, 0.11), rgba(81, 81, 81, 0.1), rgba(1, 1, 1, 0.43));')};
 backdrop-filter: blur( 10px);
 span{
     font-size: 15px;

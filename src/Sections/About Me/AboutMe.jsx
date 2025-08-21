@@ -5,7 +5,6 @@ import { FaGithub } from "react-icons/fa";
 import Button from '../../UI/Button/Button';
 import { useSelector } from 'react-redux'
 import TextType from '../../Components/React Bits/TextType/TextType';
-import AnimatedContent from '../../Components/React Bits/AnimatedContent/AnimatedContent';
 import ShinyText from '../../Components/React Bits/ShinyText/ShinyText';
 
 
@@ -42,21 +41,21 @@ const AboutMe = () => {
 
         <h2>FRONT-END DEVELOPER</h2>
 
-        
-          {
-            color === 'dark' ?
-              <ShinyText
-                text="Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías."
-                disabled={false}
-                speed={2}
-                className='custom-class' />
 
-              :
+        {
+          color === 'dark' ?
+            <ShinyText
+              text="Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías."
+              disabled={false}
+              speed={2}
+              className='custom-class' />
 
-              '         Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías.'
+            :
 
-          }
-        
+            '         Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías.'
+
+        }
+
 
         <CvDataContainer>
 
@@ -82,80 +81,60 @@ const AboutMe = () => {
         <SkillsWrapper>
 
 
-          <AnimatedContent
-            distance={200}
-            direction="horizontal"
-            reverse={true}
-            duration={1.2}
-            ease="power3.out"
-            initialOpacity={0.0}
-            animateOpacity
-            scale={1.1}
-            threshold={0.1}
-            delay={0.2}
-          >
-            <SkillsContainer bgColor={color}>
-              <span>Stack:</span>
-              <IconsContainer>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title='HTML5' width="40" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title='CSS3' width="40" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title='JavaScript' width="40" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" title='TypeScript' width="40" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.Js" title='React.Js' width="40" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.Js Logo" title='Next.Js' width="40" />
-              </IconsContainer>
-            </SkillsContainer>
 
-          </AnimatedContent>
+          <SkillsContainer
+            initial={{ opacity: 0, x: -500 }}
+            animate={{ opacity: 1, x: 0  }}
+            transition={{ duration: 1.5, delay:0, ease:"easeOut" }}
+            key="dropDown-bgcolor"
+            bgColor={color}>
+            <span>Stack:</span>
+            <IconsContainer>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title='HTML5' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title='CSS3' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title='JavaScript' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" title='TypeScript' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.Js" title='React.Js' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.Js Logo" title='Next.Js' width="40" />
+            </IconsContainer>
+          </SkillsContainer>
 
 
-          <AnimatedContent
-            distance={200}
-            direction="horizontal"
-            reverse={true}
-            duration={1.2}
-            ease="power3.out"
-            initialOpacity={0.0}
-            animateOpacity
-            scale={1.1}
-            threshold={0.1}
-            delay={0.9}
-          >
-            <SkillsContainer bgColor={color}>
-              <span className='basic-skills'>Styling:</span>
-              <IconsContainer>
-                <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Styled Components" title='Styled-Components' width="40" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title='Bootstrap' width="40" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" title='Sass' width="40" />
-              </IconsContainer>
-            </SkillsContainer>
-
-          </AnimatedContent>
 
 
-          <AnimatedContent
-            distance={200}
-            direction="horizontal"
-            reverse={true}
-            duration={2}
-            ease="power3.out"
-            initialOpacity={0.0}
-            animateOpacity
-            scale={1.1}
-            threshold={0.1}
-            delay={1.4}
-          >
-            <SkillsContainer bgColor={color}>
-              <span>Tools:</span>
-              <IconsContainer>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title='Git' width="40" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM" title='NPM' width="40" />
-                <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/vercel-light.svg" alt="Vercel" title='Vercel' height="28" width="30" />
 
-              </IconsContainer>
-            </SkillsContainer>
+          <SkillsContainer
+            initial={{ opacity: 0, x: -500 }}
+            animate={{ opacity: 1, x: 0  }}
+            transition={{ duration: 1.8, delay:0.5, ease:"easeOut" }}
+            key="dropDown-bgcolor"
+            bgColor={color}>
+            <span className='basic-skills'>Styling:</span>
+            <IconsContainer>
+              <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Styled Components" title='Styled-Components' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title='Bootstrap' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" title='Sass' width="40" />
+            </IconsContainer>
+          </SkillsContainer>
 
-          </AnimatedContent>
+
+
+
+
+          <SkillsContainer
+            initial={{ opacity: 0, x: -500 }}
+            animate={{ opacity: 1, x:  0  }}
+            transition={{ duration: 1.8, delay:1.2, ease:"easeOut" }}
+            key="dropDown-bgcolor"
+            bgColor={color}>
+            <span>Tools:</span>
+            <IconsContainer>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title='Git' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM" title='NPM' width="40" />
+              <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/vercel-light.svg" alt="Vercel" title='Vercel' height="28" width="30" />
+
+            </IconsContainer>
+          </SkillsContainer>
 
         </SkillsWrapper>
 

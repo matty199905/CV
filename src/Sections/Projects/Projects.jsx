@@ -58,37 +58,37 @@ const Projects = () => {
             <ProjectsContainer>
 
 
-       
-                    <ProjectCard
-                        description={`E-commerce desarrollado con Next.js y Styled-Components.
-Incluye registro de usuario e inicio de sesión, sistema de checkout y lógica de órdenes con rutas privadas. Cuenta con un medio de contacto con respuesta automática. Todas las funcionalidades se integran mediante el uso de APIs REST.`}
-                        tools={eCommerceTools}
-                        projectCode={'https://github.com/matty199905/eCommerce-NextJs.git'}
-                        redirect={"https://bottcherstore-ten.vercel.app/"}
-                        title={"Bottchers"}>
 
-                        <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
-                            <iframe
-                                src="https://bottcherstore-ten.vercel.app/"
-                                title="Bottchers"
-                                width="100%"
-                                height="100%"
-                                style={{
-                                    borderRadius: "20px",
-                                    border: "none",
-                                    transform: "scale(0.4)",
-                                    transformOrigin: "0 0",
-                                    width: "250%",
-                                    height: "250%",
-                                    pointerEvents: "none",
-                                    overflow: "hidden",
+                <ProjectCard
+                    description={`E-commerce desarrollado con Next.js y Styled-Components.
+                                  Incluye registro de usuario e inicio de sesión, sistema de checkout y lógica de órdenes con rutas privadas. Cuenta con un medio de contacto con respuesta automática. Todas las funcionalidades se integran mediante el uso de APIs REST.`}
+                    tools={eCommerceTools}
+                    projectCode={'https://github.com/matty199905/eCommerce-NextJs.git'}
+                    redirect={"https://bottcherstore-ten.vercel.app/"}
+                    title={"Bottchers"}>
 
-                                }}
-                            ></iframe>
-                        </div>
+                    <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
+                        <iframe
+                            src="https://bottcherstore-ten.vercel.app/"
+                            title="Bottchers"
+                            width="100%"
+                            height="100%"
+                            style={{
+                                borderRadius: "20px",
+                                border: "none",
+                                transform: "scale(0.4)",
+                                transformOrigin: "0 0",
+                                width: "250%",
+                                height: "250%",
+                                pointerEvents: "none",
+                                overflow: "hidden",
 
-                    </ProjectCard>
-       
+                            }}
+                        ></iframe>
+                    </div>
+
+                </ProjectCard>
+
 
                 <ProjectCard
                     description={`Plataforma de streaming de series y películas, desarrollada en CRA con React.js y Bootstrap, utilizando la API de TMDB.

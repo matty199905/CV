@@ -60,7 +60,7 @@ overflow-x: hidden;
   }
 
  #contact, #proyects {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 140px;
  }
 `
 

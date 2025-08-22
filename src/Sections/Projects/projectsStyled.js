@@ -5,7 +5,7 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-margin-top: 110px;
+margin: 110px 0 80px 0;
 width: 100%;
 height: auto;
 

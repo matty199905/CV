@@ -27,6 +27,9 @@ background-position-y: -25px;
 width: 145px;
 height: 145px;
 }
+  @media(max-width: 575px) {
+margin: -15px 0 15px 0;
+}
   `
 
 export const TitleContainer = styled.div`
@@ -74,7 +77,7 @@ gap: 30px;
 width: auto;
 height: auto;
 padding:0 40px;
-@media(max-width: 575px) {
+@media(max-width: 605px) {
 justify-content: center;
 gap: 0px;
 }

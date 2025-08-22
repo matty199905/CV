@@ -31,6 +31,7 @@ const AboutMe = () => {
                     pauseDuration={1500}
                     showCursor={true}
                     cursorCharacter="_"
+              
                   />
                   :
                   <>

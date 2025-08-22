@@ -7,7 +7,7 @@ position: fixed;
 top: 25px;
 display: flex;
 justify-content: space-between;
-align-items: flex-end;
+align-items: center;
 padding: 20px 30px;
 width: 70vw;
 height: 90px;
@@ -32,7 +32,7 @@ display: flex;
 justify-content: center;
 align-items: flex-end;
 gap: 30px;
-
+width: auto;
 li {
     font-size: 15px;
     transition: all .3s ease;
@@ -48,7 +48,7 @@ display: none;
 }
 }
  @media (max-width: 476px) {
-gap: 15px;
+gap: 25px;
 }
 `
 

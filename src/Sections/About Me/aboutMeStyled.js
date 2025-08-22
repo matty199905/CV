@@ -87,13 +87,14 @@ width: 100vw;
 }
 `
 export const Description = styled.div`
-font-size: 14px; 
 max-width: 600px;
 width: 100%;
 height: auto;
 padding: 0 40px;
-  box-sizing: border-box; 
+box-sizing: border-box; 
 p{
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 14px; 
     text-align: center;
     margin-top:20px;
     width: 100%;
@@ -150,7 +151,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 15px;
+gap: 5px;
 width:auto;
 height: auto;
 margin:30px 0 -25px 0;

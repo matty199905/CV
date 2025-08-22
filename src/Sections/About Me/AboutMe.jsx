@@ -5,7 +5,6 @@ import { FaGithub } from "react-icons/fa";
 import Button from '../../UI/Button/Button';
 import { useSelector } from 'react-redux'
 import TextType from '../../Components/React Bits/TextType/TextType';
-import ShinyText from '../../Components/React Bits/ShinyText/ShinyText';
 
 
 
@@ -49,19 +48,11 @@ const AboutMe = () => {
         </TitlePhotoContainer>
 
         <Description>
-          {
-            color === 'dark' ?
-              <ShinyText
-                text="Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías."
-                disabled={false}
-                speed={2.5}
-                className='custom-class' />
-
-              :
+    
               <p>
                 Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías.
               </p>
-          }
+          
         </Description>
 
         <CvDataContainer>

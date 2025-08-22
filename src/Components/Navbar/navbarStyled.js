@@ -7,7 +7,7 @@ position: fixed;
 top: 25px;
 display: flex;
 justify-content: space-between;
-align-items: flex-end;
+align-items: center;
 padding: 20px 30px;
 width: 70vw;
 height: 90px;
@@ -16,8 +16,8 @@ backdrop-filter: blur(4px);
 border-bottom: 2px solid rgba(255, 255, 255, 0.33);
 border-radius: 40px;
 z-index: 200;
- @media (max-width: 415px) {
-width: 95vw;
+ @media (max-width: 476px) {
+width: 90vw;
 }
 `
 
@@ -32,7 +32,7 @@ display: flex;
 justify-content: center;
 align-items: flex-end;
 gap: 30px;
-
+width: auto;
 li {
     font-size: 15px;
     transition: all .3s ease;
@@ -45,10 +45,11 @@ li {
    li.sections {
  @media (max-width: 870px) {
 display: none;
-    
 }
 }
-
+ @media (max-width: 476px) {
+gap: 25px;
+}
 `
 
 export const LightIconContainer = styled.div`

@@ -3,64 +3,106 @@ import { motion } from 'framer-motion';
 
 export const AboutMeWrapper = styled.section`
 display: flex;
-flex-flow: row wrap-reverse;
-justify-content: space-around;
-align-items: center;
-width: 100%;
-height: auto;
-padding-top: 105px;
-`
-
-export const InfoContainer = styled.div`
-display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: flex-start;
-width: 40vw;
-padding-top: 30px;
+align-items: center;
+height: auto;
+margin: 160px 0 100px 0;
+`
+
+
+export const ProfilePhotoContainer = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+align-self: center;
+width: 170px;
+height: 170px;
+border-radius: 50%;
+box-shadow: ${(props) => (props.bgColor === 'light' ? '0px 5px 15px rgba(0, 0, 0, 0.24)' : '0px 5px 15px rgba(0, 0, 0, 1)')};
+background-image: url('/IMG_20180915_130837_329.jpg');
+background-size: cover;
+background-position-y: -25px;
+  @media(max-width: 690px) {
+width: 145px;
+height: 145px;
+}
+  @media(max-width: 575px) {
+margin: -15px 0 15px 0;
+}
+  `
+
+export const TitleContainer = styled.div`
+display: column;
+width:350px;
 h1{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  text-align: start;
   font-size:  35px;
   line-height: 52px;
-    @media (max-width: 476px) {
+  @media(max-width: 575px) {
+    text-align: center;
+font-size: 30px;
+}
+  @media(max-width: 445px) {
 font-size: 28px;
-width: 90vw
+line-height: 1.5;
 }
 
 }
 h2 {
+   text-align: start;
     font-size:25px;
     font-weight: 800;
     color:${(props) => (props.color === 'light' ? ' rgba(3, 0, 97, 0.73)' : 'rgba(110, 202, 205, 0.87)')};
     text-shadow: ${(props) => (props.color === 'dark' ? '0px 0px 40px rgba(0, 0, 0, 1)' : 'none')} ;
-    @media (max-width: 476px) {
-font-size: 20px;
-width: 90vw;
+    
+@media(max-width: 575px) {
+  text-align:center;
+    font-size: 20px;
+    }
+  @media(max-width: 445px) {
+font-size: 17px;
 }
 }
-p{
-    margin-top:20px;
-    font-size: 14px; 
-    width: 100%;
-@media (max-width: 370px) {
-width: 110%;
-}
-}
-@media (max-width: 930px) {
-width: 100%;
-margin-top: -90px;
+`
+export const TitlePhotoContainer = styled.div`
+display: flex;
+flex-flow: row wrap-reverse;
+justify-content: space-between;
 align-items: center;
-text-align: center;
+gap: 30px;
+width: auto;
+height: auto;
+padding:0 40px;
+@media(max-width: 605px) {
+justify-content: center;
+gap: 0px;
+}
+@media(max-width: 430px) {
+padding: 0px;
+width: 100vw;
+}
+`
+export const Description = styled.div`
+font-size: 14px; 
+max-width: 600px;
+width: 100%;
+height: auto;
+padding: 0 40px;
+  box-sizing: border-box; 
+p{
+    text-align: center;
+    margin-top:20px;
+    width: 100%;
 }
 `
 
-
-
 export const CvDataContainer = styled.div`
 display: flex;
-justify-content: flex-start;
+justify-content: center;
 align-items: center;
 padding-right: 7px;
 gap: 15px;
@@ -68,9 +110,6 @@ width: 80%;
 height: 60px;
 margin-top: 30px;
 border-radius: 10px;
-@media (max-width: 930px) {
-justify-content: center;
-}
 @media (max-width: 620px) {
 margin-bottom: -10px;
 }
@@ -93,19 +132,14 @@ cursor: pointer;
 
 export const SkillsWrapper = styled.div`
 display:flex;
-flex-direction: column;
+flex-wrap: wrap;
 justify-content: center;
-align-items: flex-start;
-padding: 0;
+align-items: center;
+gap: 30px;
+width: 100vw;
 height: auto;
-@media (max-width: 620px) {
-margin-top: 40px;
-gap: 20px;
-align-items: center;
-}
-@media (max-width: 930px) {
-align-items: center;
-}
+margin-top: 15px;
+padding: 0 60px;
 `
 
 
@@ -113,77 +147,34 @@ align-items: center;
 
 export const SkillsContainer = styled(motion.div)`
 display: flex;
-justify-content: flex-start;
+flex-direction: column;
+justify-content: center;
 align-items: center;
 gap: 15px;
-width: 100%;
+width:auto;
 height: auto;
-padding: 10px 20px;
 margin:30px 0 -25px 0;
-border-radius:20px;
-background: ${(props) => (props.bgColor === 'light' ? 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.11));' :
-        'linear-gradient(to left, rgba(255, 255, 255, 0.11), rgba(81, 81, 81, 0.1), rgba(1, 1, 1, 0.43));')};
-backdrop-filter: blur( 10px);
 span{
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0px;
 }
 
- @media (max-width: 930px) {
-.basic-skills{
-     margin-left: -10px;
- }
-}
-@media (max-width: 620px) {
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-top: 15px;
-        span{
-        margin: -10px;
-    }
-}
-
 `
 export const IconsContainer = styled.div`
 display: flex;
-justify-content: flex-start;
+justify-content: center;
 gap: 10px;
-width: 100%;
-margin: 0 10px;
+padding: 10px 20px;
+border-radius:20px;
+background: ${(props) => (props.bgColor === 'light' ? 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.11));' :
+        'linear-gradient(to left, rgba(255, 255, 255, 0.11), rgba(81, 81, 81, 0.1), rgba(1, 1, 1, 0.43));')};
+backdrop-filter: blur( 10px);
+width:300px;
+margin: 0 0px;
 img {
     width: 35px;
 }
-@media (max-width: 620px) {
-    justify-content: center;
-
-}
-@media (max-width: 470px) {
-    justify-content: center;
-    gap: 10px;
-}
-
 `
 
 
-
-
-export const ProfilePhotoContainer = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-align-self: flex-end;
-margin-top: 50px;
-    width: 27%;
-    img{
-width: 100%;
-border-radius: 35px;
-box-shadow: ${(props) => (props.bgColor === 'light' ? '0px 5px 15px rgba(0, 0, 0, 0.24)' : '0px 5px 15px rgba(0, 0, 0, 1)')};
-    }
-    @media (max-width: 930px) {
-width:200px;
-height: auto;
-margin-bottom: 85px;
-}
-  `

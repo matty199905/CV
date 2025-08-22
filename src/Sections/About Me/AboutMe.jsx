@@ -1,5 +1,5 @@
 
-import { AboutMeWrapper, CvDataContainer, IconsContainer, InfoContainer, ProfilePhotoContainer, SkillsContainer, SkillsWrapper, SocialContact } from './aboutMeStyled'
+import { AboutMeWrapper, CvDataContainer, Description, IconsContainer, ProfilePhotoContainer, SkillsContainer, SkillsWrapper, SocialContact, TitlePhotoContainer, TitleContainer } from './aboutMeStyled'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Button from '../../UI/Button/Button';
@@ -19,43 +19,50 @@ const AboutMe = () => {
     <AboutMeWrapper>
 
 
+        <TitlePhotoContainer>
 
-      <InfoContainer color={color}>
-        <h1>
+          <TitleContainer>
+            <h1>
+              {
+                color === 'dark' ?
+                  <TextType
+                    text={"Hola 👋, soy \nMatías Bottcher!"}
+                    typingSpeed={75}
+                    pauseDuration={1500}
+                    showCursor={true}
+                    cursorCharacter="_"
+              
+                  />
+                  :
+                  <>
+                    Hola 👋, soy <br />
+                    Matías Bottcher!
+                  </>
+              }
+            </h1>
+
+            <h2>FRONT-END DEVELOPER</h2>
+          </TitleContainer>
+          <ProfilePhotoContainer bgColor={color} />
+
+
+        </TitlePhotoContainer>
+
+        <Description>
           {
             color === 'dark' ?
-              <TextType
-                text={"Hola 👋, soy \nMatías Bottcher!"}
-                typingSpeed={75}
-                pauseDuration={1500}
-                showCursor={true}
-                cursorCharacter="_"
-              />
+              <ShinyText
+                text="Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías."
+                disabled={false}
+                speed={2.5}
+                className='custom-class' />
+
               :
-              <>
-                Hola 👋, <br />
-                soy Matías Bottcher!
-              </>
+              <p>
+                Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías.
+              </p>
           }
-        </h1>
-
-        <h2>FRONT-END DEVELOPER</h2>
-
-
-        {
-          color === 'dark' ?
-            <ShinyText
-              text="Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías."
-              disabled={false}
-              speed={2}
-              className='custom-class' />
-
-            :
-
-            '         Apasionado por la creación de interfaces web modernas, accesibles y optimizadas. Con experiencia en ReactJs, desarrollo de componentes reutilizables y consumo de APIs REST. Con capacidad para resolver problemas y aprender rápidamente nuevas tecnologías.'
-
-        }
-
+        </Description>
 
         <CvDataContainer>
 
@@ -84,8 +91,8 @@ const AboutMe = () => {
 
           <SkillsContainer
             initial={{ opacity: 0, x: -500 }}
-            animate={{ opacity: 1, x: 0  }}
-            transition={{ duration: 1.5, delay:0, ease:"easeOut" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, delay: 0, ease: "easeOut" }}
             key="dropDown-bgcolor"
             bgColor={color}>
             <span>Stack:</span>
@@ -105,11 +112,11 @@ const AboutMe = () => {
 
           <SkillsContainer
             initial={{ opacity: 0, x: -500 }}
-            animate={{ opacity: 1, x: 0  }}
-            transition={{ duration: 1.8, delay:0.5, ease:"easeOut" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.8, delay: 0.5, ease: "easeOut" }}
             key="dropDown-bgcolor"
             bgColor={color}>
-            <span className='basic-skills'>Styling:</span>
+            <span>Styling:</span>
             <IconsContainer>
               <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Styled Components" title='Styled-Components' width="40" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title='Bootstrap' width="40" />
@@ -123,8 +130,8 @@ const AboutMe = () => {
 
           <SkillsContainer
             initial={{ opacity: 0, x: -500 }}
-            animate={{ opacity: 1, x:  0  }}
-            transition={{ duration: 1.8, delay:1.2, ease:"easeOut" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.8, delay: 1.2, ease: "easeOut" }}
             key="dropDown-bgcolor"
             bgColor={color}>
             <span>Tools:</span>
@@ -138,13 +145,11 @@ const AboutMe = () => {
 
         </SkillsWrapper>
 
-      </InfoContainer>
+  
 
 
 
-      <ProfilePhotoContainer bgColor={color}>
-        <img src="/IMG_20180915_130837_329.jpg" alt="foto" />
-      </ProfilePhotoContainer>
+
 
 
 

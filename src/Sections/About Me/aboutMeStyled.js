@@ -93,11 +93,10 @@ height: auto;
 padding: 0 40px;
 box-sizing: border-box; 
 p{
-  color: rgba(255, 255, 255, 0.66);
+  color: rgba(0, 0, 0, 0.66);
   font-size: 14px; 
-    text-align: center;
-    margin-top:20px;
-    width: 100%;
+  text-align: center;
+  margin-top:20px;
 }
 `
 
@@ -169,7 +168,7 @@ gap: 10px;
 padding: 10px 20px;
 border-radius:20px;
 background: ${(props) => (props.bgColor === 'light' ? 'linear-gradient(to left, rgba(255, 255, 255, 0.14), rgba(1, 1, 1, 0.11));' :
-        'linear-gradient(to left, rgba(255, 255, 255, 0.11), rgba(81, 81, 81, 0.1), rgba(1, 1, 1, 0.43));')};
+    'linear-gradient(to left, rgba(255, 255, 255, 0.11), rgba(81, 81, 81, 0.1), rgba(1, 1, 1, 0.43));')};
 backdrop-filter: blur( 10px);
 width:300px;
 margin: 0 0px;

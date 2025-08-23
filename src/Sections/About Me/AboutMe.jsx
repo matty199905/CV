@@ -98,7 +98,8 @@ const AboutMe = () => {
           initial={{ opacity: 0, x: -500 }}
            whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, delay: 0, ease: "easeOut" }}
-          key="dropDown-bgcolor"
+          viewport={{ once: false, amount: 0.2 }}
+          key="stack"
           bgColor={color}>
           <span>Stack:</span>
           <IconsContainer>
@@ -119,7 +120,8 @@ const AboutMe = () => {
           initial={{ opacity: 0, x: -500 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.8, delay: 0.5, ease: "easeOut" }}
-          key="dropDown-bgcolor"
+          viewport={{ once: false, amount: 0.2 }}
+          key="styling"
           bgColor={color}>
           <span>Styling:</span>
           <IconsContainer>
@@ -137,7 +139,8 @@ const AboutMe = () => {
           initial={{ opacity: 0, x: -500 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.8, delay: 1.2, ease: "easeOut" }}
-          key="dropDown-bgcolor"
+          viewport={{ once: false, amount: 0.2 }}
+          key="tools"
           bgColor={color}>
           <span>Tools:</span>
           <IconsContainer>

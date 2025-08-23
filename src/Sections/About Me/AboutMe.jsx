@@ -96,7 +96,7 @@ const AboutMe = () => {
 
         <SkillsContainer
           initial={{ opacity: 0, x: -500 }}
-          animate={{ opacity: 1, x: 0 }}
+           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, delay: 0, ease: "easeOut" }}
           key="dropDown-bgcolor"
           bgColor={color}>
@@ -117,7 +117,7 @@ const AboutMe = () => {
 
         <SkillsContainer
           initial={{ opacity: 0, x: -500 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.8, delay: 0.5, ease: "easeOut" }}
           key="dropDown-bgcolor"
           bgColor={color}>
@@ -135,7 +135,7 @@ const AboutMe = () => {
 
         <SkillsContainer
           initial={{ opacity: 0, x: -500 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.8, delay: 1.2, ease: "easeOut" }}
           key="dropDown-bgcolor"
           bgColor={color}>

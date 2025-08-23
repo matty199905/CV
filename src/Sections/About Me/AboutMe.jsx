@@ -95,10 +95,10 @@ const AboutMe = () => {
 
 
         <SkillsContainer
-          initial={{ opacity: 0, x: -500 }}
+          initial={{ opacity: 0, x: -200 }}
            whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, delay: 0, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0}}
           key="stack"
           bgColor={color}>
           <span>Stack:</span>
@@ -117,10 +117,10 @@ const AboutMe = () => {
 
 
         <SkillsContainer
-          initial={{ opacity: 0, x: -500 }}
+          initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.8, delay: 0.5, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0 }}
           key="styling"
           bgColor={color}>
           <span>Styling:</span>
@@ -136,10 +136,10 @@ const AboutMe = () => {
 
 
         <SkillsContainer
-          initial={{ opacity: 0, x: -500 }}
+          initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.8, delay: 1.2, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0 }}
           key="tools"
           bgColor={color}>
           <span>Tools:</span>

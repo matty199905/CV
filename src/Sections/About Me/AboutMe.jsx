@@ -95,9 +95,9 @@ const AboutMe = () => {
 
 
         <SkillsContainer
-          initial={{ opacity: 0, x: -200 }}
-           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5, delay: 0, ease: "easeOut" }}
+          initial={{ opacity: 0, x: -200,  filter: "blur(10px)"  }}
+           whileInView={{ opacity: 1, x: 0,  filter: "blur(0px)"  }}
+          transition={{ duration: 1.2, delay: 0, ease: "easeOut" }}
           viewport={{ once: false, amount: 0}}
           key="stack"
           bgColor={color}>
@@ -117,9 +117,9 @@ const AboutMe = () => {
 
 
         <SkillsContainer
-          initial={{ opacity: 0, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.8, delay: 0.5, ease: "easeOut" }}
+          initial={{ opacity: 0, x: -200,  filter: "blur(10px)"  }}
+          whileInView={{ opacity: 1, x: 0,  filter: "blur(0px)"  }}
+          transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
           viewport={{ once: false, amount: 0 }}
           key="styling"
           bgColor={color}>
@@ -136,9 +136,9 @@ const AboutMe = () => {
 
 
         <SkillsContainer
-          initial={{ opacity: 0, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.8, delay: 1.2, ease: "easeOut" }}
+          initial={{ opacity: 0, x: -200,  filter: "blur(10px)"  }}
+          whileInView={{ opacity: 1, x: 0,  filter: "blur(0px)"  }}
+          transition={{ duration: 1.2, delay: 1.2, ease: "easeOut" }}
           viewport={{ once: false, amount: 0 }}
           key="tools"
           bgColor={color}>

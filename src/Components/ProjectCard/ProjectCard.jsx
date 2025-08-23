@@ -8,7 +8,7 @@ import FlippedCard from '../FlippedCard/FlippedCard';
 
 
 
-const ProjectCard = ({ children, title, redirect, description, tools, projectCode }) => {
+const ProjectCard = ({ children, title, redirect, description, tools, projectCode, img }) => {
 
   const [flipped, setFlipped] = useState(false);
 
@@ -19,6 +19,7 @@ const ProjectCard = ({ children, title, redirect, description, tools, projectCod
     <ProjectWrapper>
 
       <ProjectImg
+        img={img}
         animate={{ rotateY: flipped ? -180 : 0 }}
         transition={{ duration: 0.7, ease: "easeInOut" }}
         flipped={flipped}

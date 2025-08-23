@@ -18,12 +18,13 @@ h3{
 export const ProjectImg = styled(motion.div)`
 position: relative;
 width: 100%;
-height: 100%;
+height: 400px;
 border-radius: 20px;
 z-index: 100;
 padding: 0;
+background-image: ${(props)=>( `url(${props.img})`)};
+background-size: cover;
 cursor: ${(props)=>(!props.flipped ? 'pointer' : 'auto')};
-
 `
 
 

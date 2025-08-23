@@ -20,7 +20,7 @@ width: 170px;
 height: 170px;
 border-radius: 50%;
 box-shadow: ${(props) => (props.bgColor === 'light' ? '0px 5px 15px rgba(0, 0, 0, 0.24)' : '0px 5px 15px rgba(0, 0, 0, 1)')};
-background-image: url('/IMG_20180915_130837_329.jpg');
+background-image: url('/Imgs/Profile-Photo.jpg');
 background-size: cover;
 background-position-y: -25px;
   @media(max-width: 690px) {

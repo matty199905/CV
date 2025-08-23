@@ -65,29 +65,9 @@ const Projects = () => {
                     tools={eCommerceTools}
                     projectCode={'https://github.com/matty199905/eCommerce-NextJs.git'}
                     redirect={"https://bottcherstore-ten.vercel.app/"}
-                    title={"Bottchers"}>
+                    title={"Bottchers"}
+                    img={'/Imgs/Bottchers-Photo.jpg'}/>
 
-                    <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
-                        <iframe
-                            src="https://bottcherstore-ten.vercel.app/"
-                            title="Bottchers"
-                            width="100%"
-                            height="100%"
-                            style={{
-                                borderRadius: "20px",
-                                border: "none",
-                                transform: "scale(0.4)",
-                                transformOrigin: "0 0",
-                                width: "250%",
-                                height: "250%",
-                                pointerEvents: "none",
-                                overflow: "hidden",
-
-                            }}
-                        ></iframe>
-                    </div>
-
-                </ProjectCard>
 
 
                 <ProjectCard
@@ -97,28 +77,9 @@ Incluye barra de búsqueda, filtros por género según la sección, y páginas d
                     projectCode={'https://github.com/matty199905/maxflix'}
                     redirect={"https://maxflix-jet.vercel.app/"}
                     title={"MaxFlix"}
-                >
-                    <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
-                        <iframe
-                            src="https://maxflix-jet.vercel.app/"
-                            title="MaxFlix"
-                            width="100%"
-                            height="100%"
-                            style={{
-                                borderRadius: "20px",
-                                border: "none",
-                                transform: "scale(0.4)",
-                                transformOrigin: "0 0",
-                                width: "250%",
-                                height: "250%",
-                                pointerEvents: "none",
-                                overflow: "hidden",
-                            }}
-                        >
-
-                        </iframe>
-                    </div>
-                </ProjectCard>
+                    img={'/Imgs/Maxflix-Photo.jpg'}
+                />
+                   
 
 
                 <ProjectCard
@@ -127,29 +88,10 @@ Incluye filtros avanzados por búsqueda, letra inicial, perfiles de sabor y tipo
                     tools={theBooktailTools}
                     projectCode={'https://github.com/matty199905/The-Booktail.git'}
                     redirect={"https://the-booktail.vercel.app/"}
-                    title={"The Booktail"}>
+                    title={"The Booktail"}
+                    img={'/Imgs/TheBooktail-Photo.jpg'}/>
 
-                    <div style={{ width: '100%', height: '400px', overflow: 'hidden', borderRadius: '20px' }}>
-                        <iframe
-                            src="https://the-booktail.vercel.app/"
-                            title="The Booktail"
-                            width="100%"
-                            height="100%"
-                            style={{
-                                borderRadius: "20px",
-                                border: "none",
-                                transform: "scale(0.4)",
-                                transformOrigin: "0 0",
-                                width: "250%",
-                                height: "250%",
-                                pointerEvents: "none",
-                                overflowY: 'hidden',
-
-                            }}
-                        ></iframe>
-                    </div>
-
-                </ProjectCard>
+        
 
 
             </ProjectsContainer>

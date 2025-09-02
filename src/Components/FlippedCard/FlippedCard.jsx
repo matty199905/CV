@@ -1,4 +1,4 @@
- 
+
 import { AboutProject, FlippedCardContainer } from './flippedCardStyled'
 
 const FlippedCard = ({ description, tools, projectCode }) => {
@@ -6,7 +6,7 @@ const FlippedCard = ({ description, tools, projectCode }) => {
         <FlippedCardContainer>
             <h3>Sobre el Proyecto</h3>
             <AboutProject>
-                <p>{description}</p>
+                <p>{description.map((item)=> <ul><li>{item}</li></ul>)}</p>
 
                 <div className='tools'>
                     <span>Herramientas Utilizadas:  </span>

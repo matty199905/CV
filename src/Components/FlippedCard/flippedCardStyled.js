@@ -41,6 +41,15 @@ overflow-y: auto;
 
 p{
     margin-bottom: 30px;
+  font-size: 12px;
+  text-align: left;
+
+  li{
+    list-style-type: disc;
+    margin-bottom: 10px;
+  }
+  
+
 }
 
 

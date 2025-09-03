@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 👨‍💻 Portfolio de Matías Bottcher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenido a mi **portfolio de proyectos de frontend**, donde muestro mis trabajos desarrollados con **React.js, Next.js, Vite, Styled-Components, Bootstrap y otras tecnologías modernas**.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🛠️ Tecnologías y Herramientas
 
-### `npm start`
+- **React.js / Next.js / Vite** – Librerías y frameworks para interfaces modernas.  
+- **TypeScript** – Tipado estático para código más robusto.  
+- **Styled-Components / Bootstrap** – Estilos dinámicos y diseño responsivo.  
+- **Redux / Redux Toolkit** – Gestión global del estado de la aplicación.  
+- **React Router** – Navegación entre páginas y rutas dinámicas.  
+- **Axios** – Consumo de APIs REST.  
+- **Formik + Yup** – Manejo y validación de formularios.  
+- **Framer Motion** – Animaciones fluidas.  
+- **React Icons / React YouTube / EmailJS** – Componentes y funcionalidades extra.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Proyectos
 
-### `npm test`
+### 1️⃣ E-commerce con Next.js & Styled-Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Descripción:**  
+Plataforma de e-commerce con integración de **Mercado Pago**, registro e inicio de sesión de usuarios, sistema de checkout y rutas privadas. Incluye formulario de contacto con respuesta automática y consumo de **APIs REST**.  
 
-### `npm run build`
+**Tecnologías:** Next.js, TypeScript, Styled-Components, React Redux, JWT, Axios, Formik, Yup, Framer Motion, React Icons, EmailJS  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Funcionalidades:**  
+- Catálogo de productos y navegación dinámica  
+- Integración de pagos con Mercado Pago  
+- Registro de usuarios y autenticación JWT  
+- Sistema de checkout y órdenes  
+- Formulario de contacto con autorespuesta  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2️⃣ Plataforma de Streaming de Series y Películas
 
-### `npm run eject`
+**Descripción:**  
+Plataforma para explorar y ver tráilers de series y películas con **TMDB API**. Incluye barra de búsqueda, filtros por género, páginas dinámicas por contenido y redireccionamiento a plataformas de streaming externas.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Tecnologías:** CRA, React.js, Bootstrap, React Router, React Redux, Axios, Framer Motion, React Icons, React YouTube  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Funcionalidades:**  
+- Barra de búsqueda integrada  
+- Filtros por género y categoría  
+- Páginas dinámicas para cada contenido  
+- Visualización de tráilers  
+- Redirección a plataformas externas  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3️⃣ Librería de Cócteles
 
-## Learn More
+**Descripción:**  
+Aplicación de librería de cócteles con **Vite, React.js y Styled-Components**, con filtros avanzados y páginas dinámicas para cada cocktail mostrando receta y método de preparación.  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Tecnologías:** Vite, TypeScript, Styled-Components, React Router, React Redux, React Icons, Framer Motion  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Funcionalidades:**  
+- Páginas dinámicas con recetas completas  
+- Filtros por búsqueda, letra inicial, perfil de sabor y tipo de alcohol  
+- Navegación con React Router  
+- Gestión de estado con Redux Toolkit  
+- Animaciones con Framer Motion  

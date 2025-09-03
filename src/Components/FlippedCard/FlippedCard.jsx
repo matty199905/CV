@@ -6,7 +6,8 @@ const FlippedCard = ({ description, tools, projectCode }) => {
         <FlippedCardContainer>
             <h3>Sobre el Proyecto</h3>
             <AboutProject>
-                <p>{description.map((item)=> <ul><li>{item}</li></ul>)}</p>
+                <div className='description'> <span>{description[0]}</span>
+                    {description.slice(1).map((item)=> <ul><li>{item}</li></ul>)}</div>
 
                 <div className='tools'>
                     <span>Herramientas Utilizadas:  </span>

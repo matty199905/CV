@@ -11,6 +11,7 @@ width: auto;
 height: 400px;
 border-radius: 20px;
 background-color: rgba(3, 0, 97, 0.7);
+backdrop-filter: blur(5px);
 transform: rotateY(180deg);
     ::-webkit-scrollbar {
   width: 8px;      
@@ -38,16 +39,22 @@ color: white;
 background:linear-gradient(to bottom, rgba(2, 0, 59, 0.7),rgba(130, 126, 248, 0.7)) ;
 overflow-y: auto;
 
-
-p{
+div.description{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     margin-bottom: 30px;
-  font-size: 12px;
-  text-align: left;
+    font-size: 13px;
+    text-align: left;
+  
+ul {
+    margin-left: 8px;
+    li{
+    
+        list-style: disc; 
+      }
+}
 
-  li{
-    list-style-type: disc;
-    margin-bottom: 10px;
-  }
   
 
 }

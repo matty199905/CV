@@ -63,7 +63,7 @@ const Projects = () => {
                 <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0}>
                     <ProjectCard
                         description={[ 
-                            "E-commerce desarrollado con Next.js y Styled-Components:", 
+                            "E-commerce desarrollado en Next.js y estilada con Styled-Components:", 
                             "Integración de Mercado Pago.", 
                             "Registro de usuario e inicio de sesión", 
                             "Sistema de checkout y lógica de órdenes con rutas privadas.", 
@@ -80,7 +80,7 @@ const Projects = () => {
                 <FadeContent blur={true} d duration={1500} easing="ease-out" initialOpacity={0}>
                     <ProjectCard
                         description={[
-  "Plataforma de streaming de series y películas desarrollada en CRA con React.js y Bootstrap",
+  "Plataforma de streaming de series y películas desarrollada en CRA con React.js y Bootstrap:",
   "Consumo de la API de TMDB",
   "Barra de búsqueda integrada",
   "Filtros de búsqueda",
@@ -98,7 +98,7 @@ const Projects = () => {
                 <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0}>
                     <ProjectCard
                         description={[ 
-                            "Librería de cócteles con base de datos personalizada, desarrollada en Vite con React.js y Styled-Components",
+                            "Librería de cócteles con base de datos personalizada, desarrollada en Vite con React.js y estilada con Styled-Components:",
                             "Páginas dinámicas para cada cocktail con su respectiva recetas y método de preparación", 
                             "Filtros por: Búsqueda, Letra inicial, Perfiles de sabor, Tipo de alcohol", 
                             "Navegación con React Router", 
